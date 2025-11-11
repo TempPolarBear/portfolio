@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#"><i class="fas fa-user"></i> Valeriia Kuznetsova</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,14 +33,15 @@
                         <a class="nav-link" href="#welcome"><i class="fa-solid fa-door-open"></i> Welcome</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             General Info
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Personal Info</a>
-                            <a class="dropdown-item" href="#">Contacts</a>
-                            <a class="dropdown-item" href="#">Languages</a>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#personal_info"><i class="fa-solid fa-info me-1"></i>Personal Info</a></li>
+                            <li><a class="dropdown-item" href="#contacts"><i class="fa-solid fa-address-book me-1"></i>Contacts</a></li>
+                            <li><a class="dropdown-item" href="#languages"><i class="fa-solid fa-language me-1"></i>Languages</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#expirence"><i class="fa-solid fa-code-fork me-1"></i> Expirence</a>
@@ -49,13 +50,14 @@
                         <a class="nav-link" href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Skills
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-laptop-code"></i> Hard Skills</a>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-heart"></i> Soft Skills</a>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#hard_skills"><i class="fa-solid fa-laptop-code me-1"></i>Hard Skills</a></li>
+                            <li><a class="dropdown-item" href="#soft_skills"><i class="fa-solid fa-heart me-1"></i>Soft Skills</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -83,7 +85,7 @@
             <div class="row justify-content-center align-items-start">
                 <div class="col-3">
                     <div class="card">
-                        <div class="card-header">
+                        <div id="personal_info" class="card-header">
                             <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-info me-1"></i>Personal Info</h5>
                         </div> 
                         <div class="card-body">
@@ -94,8 +96,8 @@
                         </div>
                     </div>
                     <div class="card mt-3">
-                        <div class="card-header">
-                            <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-address-book"></i> Contacts</h5>
+                        <div id="contacts" class="card-header">
+                            <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-address-book"></i>Contacts</h5>
                         </div>
                         <div class="card-body">
                             <p><i class="fa-regular fa-envelope fw-bold me-1"></i>Email</p>
@@ -103,7 +105,7 @@
                         </div>
                     </div>
                     <div class="card mt-3">
-                        <div class="card-header">
+                        <div id="languages" class="card-header">
                             <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-language me-1"></i>Languages</h5>
                         </div>
                         <div class="card-body p-0 ms-4 pt-3">
@@ -170,13 +172,6 @@
                                         <i class="fa-solid fa-star"></i>
                                     </span>
                                 </li>
-                                <li class="list-group-item p-2">Bootstrap
-                                    <span class="ms-1">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </span>
-                                </li>
                                 <li class="list-group-item p-2">HTML/CSS
                                     <span class="ms-1">
                                         <i class="fa-solid fa-star"></i>
@@ -198,15 +193,9 @@
                                         <i class="fa-solid fa-star"></i>
                                     </span>
                                 </li>
-                                <li class="list-group-item p-2">Figma
-                                    <span class="ms-1">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </span>
-                                </li>
                                 <li class="list-group-item p-2">Trello
                                     <span class="ms-1">
+                                        <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </span>
@@ -215,9 +204,23 @@
                                     <span class="ms-1">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
                                     </span>
                                 </li>
                                 <li class="list-group-item p-2">Responsive Design
+                                    <span class="ms-1">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item p-2">Figma
+                                    <span class="ms-1">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item p-2">Bootstrap
                                     <span class="ms-1">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
@@ -246,24 +249,6 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </span>
-                                </li>
-                                
-                                <li class="list-group-item p-2">Empathy
-                                    <span class="ms-1">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </span>
-                                </li>
-                                <li class="list-group-item p-2">Problem Solving
-                                    <span class="ms-1">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
                                     </span>
                                 </li>
                                 <li class="list-group-item p-2">Responsibility
@@ -274,22 +259,14 @@
                                         <i class="fa-solid fa-star"></i>
                                     </span>
                                 </li>
-                                <li class="list-group-item p-2">Creativity
+                                 <li class="list-group-item p-2">Teamwork
                                     <span class="ms-1">
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                     </span>
-                                </li>
-                                <li class="list-group-item p-2">Teamwork
-                                    <span class="ms-1">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </span>
-                                </li>
+                                </li>add
                                 <li class="list-group-item p-2">Flexibility
                                     <span class="ms-1">
                                         <i class="fa-solid fa-star"></i>
@@ -304,6 +281,13 @@
                                         <i class="fa-solid fa-star"></i>
                                     </span>
                                 </li>
+                                <li class="list-group-item p-2">Creativity
+                                    <span class="ms-1">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </li>
                                 <li class="list-group-item p-2">Time Management
                                     <span class="ms-1">
                                         <i class="fa-solid fa-star"></i>
@@ -311,7 +295,19 @@
                                         <i class="fa-solid fa-star"></i>
                                     </span>
                                 </li>
-                                
+                                <li class="list-group-item p-2">Problem Solving
+                                    <span class="ms-1">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </li>
+                                <li class="list-group-item p-2">Empathy
+                                    <span class="ms-1">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                     </div>
