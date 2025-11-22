@@ -1,7 +1,7 @@
 .bg-header {
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-    url('../../assets/img/my_photo.jpg'); 
+    url('../../assets/img//photo/my_photo.webp'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,4 +10,10 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+.thumb {
+  aspect-ratio: 1/ 1;
+  object-fit: cover;
+  object-position: top;
 }
