@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="icon" href="./assets/img/icons/portfolio.webp" type="image/x-icon">
 
     <!-- Bootswatch CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.8/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.8/zephyr/bootstrap.min.css">
 
     <!-- Lightbox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css" integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
@@ -48,17 +48,17 @@
                             <li><a class="dropdown-item" href="#media"><i class="fa-solid fa-hashtag me-1"></i>Social Media</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#expirence"><i class="fa-solid fa-code-fork me-1"></i>Expirence</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio"><i class="fa-solid fa-briefcase me-1"></i>Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certificate"><i class="fa-solid fa-medal me-1"></i>Certificate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education"><i class="fa-solid fa-graduation-cap me-1"></i>Education</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-info me-1"></i>
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="nav-link" href="#expirence"><i class="fa-solid fa-code-fork me-1"></i>Expirence</a></li>
+                            <li><a class="nav-link" href="#projects"><i class="fa-solid fa-folder-open me-1"></i></i>Projects</a></li>
+                            <li><a class="nav-link" href="#certificate"><i class="fa-solid fa-medal me-1"></i>Certificate</a></li>
+                            <li><a class="nav-link" href="#education"><i class="fa-solid fa-graduation-cap me-1"></i>Education</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -71,6 +71,9 @@
                         </ul>
                     </li>
                 </ul>
+                <div class="form-check form-switch">
+                    <i class="fa-solid fa-sun"></i><input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked><i class="fa-solid fa-moon"></i>
+                </div>
             </div>
         </div>
     </nav>
@@ -164,11 +167,11 @@
                             </div>
                         </div>
                     </section> 
-                    <!-- PORTOFLIO -->
-                    <section id="portfolio">
+                    <!-- PROJECTS -->
+                    <section id="projects">
                         <div class="card mt-3">
                             <div class="card-header ">
-                                <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-briefcase me-1"></i>Portfolio</h5>
+                                <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-folder-open me-1"></i></i>Projects</h5>
                             </div>
                             <div class="card-body">
                                 <div class="row justify-content-center align-items-center">
@@ -178,7 +181,8 @@
                                             <img class="img-fluid thumb" src="assets/img/portfolio/nft.webp" alt="NFT for Music" />
                                         </a>
                                         <div class="d-grid gap-2 m-2">
-                                            <a class="btn btn-outline-secondary" href="https://temppolarbear.github.io/nft_for_music_creators/" target="_blank">Go to Site</a>
+                                            <a class="btn btn-outline-secondary" href="https://temppolarbear.github.io/nft_for_music_creators/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This is a design concept for a web platform for music creators, where artists can release, sell, and promote their music NFTs"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
                                         </div>
                                     </div>
                                     <div class="col text-center">
@@ -187,7 +191,8 @@
                                             <img class="img-fluid thumb" src="assets/img/portfolio/appello.webp" alt="Appello"/>
                                         </a>
                                         <div class="d-grid gap-2 m-2">
-                                            <a class="btn btn-outline-secondary" href="https://temppolarbear.github.io/appello/" target="_blank">Go to Site</a>
+                                            <a class="btn btn-outline-secondary" href="https://temppolarbear.github.io/appello/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                             <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Appello is a website for a digital product development company that creates mobile applications, web platforms, and turnkey software solutions. The website presents services in UX/UI design, prototyping, testing, development, and project support. It also shows a portfolio of real cases, information about the team, stages of work, and open vacancies. The company positions itself as an international studio with a high level of expertise and extensive experience in creating commercial applications."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
                                         </div>
                                     </div>
                                     <div class="col text-center">
@@ -196,7 +201,8 @@
                                             <img class="img-fluid thumb" src="assets/img/portfolio/" alt="Barbershop"/>
                                         </a>
                                         <div class="d-grid gap-2 m-2">
-                                            <a class="btn btn-outline-secondary" href="" target="_blank">Go to Site</a>
+                                            <a class="btn btn-outline-secondary" href="" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                             <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Barbershop is a modern website concept for a barbershop offering haircuts, beard care, and grooming services. The design highlights services, prices, barbers, a gallery of works, and booking options, using a clean and stylish visual style."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
                                         </div>
                                     </div>
                                     <div class="col text-center">
@@ -205,7 +211,8 @@
                                             <img class="img-fluid thumb" src="assets/img/portfolio/covid.webp" alt="Covid"/>
                                         </a>
                                         <div class="d-grid gap-2 m-2">
-                                            <a class="btn btn-outline-secondary" href="https://temppolarbear.github.io/covid/" target="_blank">Go to Site</a>
+                                            <a class="btn btn-outline-secondary" href="https://temppolarbear.github.io/covid/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                             <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Design prototype for an information resource about COVID-19, not an official medical or government platform. Could be a concept for a project aimed at informing people about the coronavirus"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
                                         </div>
                                     </div>
                                 </div>
@@ -216,7 +223,7 @@
                      <section id="certificate">
                         <div class="card mt-3">
                             <div class="card-header">
-                                <h5><i class="fa-solid fa-medal me-1"></i>Certificate</h5>
+                                <h5 class="m-0 p-0"><i class="fa-solid fa-medal me-1"></i>Certificate</h5>
                             </div>
                             <div class="card-body">
                                 <div class="row justify-content-center align-items-center">
@@ -356,7 +363,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <p><i class="fa-solid fa-palette me-1"></i>UX/UI Design</p>
+                                        <p><i class="fa-solid fa-palette me-1"></i>UI/UX Design</p>
                                     </div>
                                     <div class="col">
                                         <div class="progress">
