@@ -71,44 +71,43 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="row align-items-center justify-content-center">
-                    <div class="col col-auto m-0 p-0">
-                        <i class="fa-solid fa-sun"></i>
+                <div class="d-flex align-items-center ms-3">
+                    <i class="fa-solid fa-sun"></i>
+                    <div class="form-check form-switch m-0 mx-2">
+                        <input class="form-check-input" type="checkbox" role="switch" id="themeToggle" />
                     </div>
-                    <div class="col">
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="themeToggle" />
-                        </div>
-                    </div>
-                    <div class="col col-auto m-0 p-0">
-                        <i class="fa-solid fa-moon"></i>
-                    </div>
+                    <i class="fa-solid fa-moon"></i>
                 </div>
             </div>
         </div>
     </nav>
     <!--HEADER-->
-    <header class="m-5" id="welcome">
-        <div class="container bg-header text-light">
-            <div class="col">
-                <div class="row text-start">
-                    <h2 class="fw-1 mb-5"><strong>Hello i'm Valeriia Kuznetsova</strong></h2>
-                </div>
-                <div class="row text-start mt-3">
-                    <p><i class="fa-solid fa-graduation-cap mb-3 me-1"></i>Intern Frontend Developer & Intern UI/UX Designer <br>
-                        <i class="fa-solid fa-desktop mb-3 me-1"></i>HTML, CSS & Bootstrap <br>
-                        <i class="fa-solid fa-book-bookmark mb-3 me-1"></i>Learning JS <br>
-                        <i class="fa-solid fa-palette mb-3 me-1"></i>Creating projects & planning more <br>
-                        <i class="fa-solid fa-people-group mb-3 me-1"></i>Open to collaboration and new opportunities</p>
+    <header class="mt-5 mb-5" id="welcome">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="bg-header text-light rounded-2 p-5 d-flex align-items-center min-vh-100">
+                        <div>
+                            <h2 class="fw-bold mb-4">Hello i'm Valeriia Kuznetsova</h2>
+                            <p>
+                                <i class="fa-solid fa-graduation-cap me-1 mb-3"></i>Intern Frontend Developer & Intern UI/UX Designer <br>
+                                <i class="fa-solid fa-desktop me-1 mb-3"></i>HTML, CSS & Bootstrap <br>
+                                <i class="fa-solid fa-book-bookmark me-1 mb-3"></i>Learning JS <br>
+                                <i class="fa-solid fa-palette me-1 mb-3"></i>Creating projects & planning more <br>
+                                <i class="fa-solid fa-people-group me-1 mb-3"></i>Open to collaboration and new opportunities
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+
     <main>
         <!-- PERSONAL INFO -->
         <div class="container">
-            <div class="row justify-content-center align-items-start">
-                <div class="col-3">
+            <div class="row justify-content-center align-items-start g-4">
+                <div class="col-sm-12 col-md-3 col-xl-3 col-xxl-3">
                     <div class="card">
                         <div id="personal_info" class="card-header">
                             <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-user fw-bold me-1"></i></i>Personal Info</h5>
@@ -238,13 +237,13 @@
                             <div class="card-body">
                                 <div class="row justify-content-center align-items-center">
                                     <div class="col text-center">
-                                        <h4 class="p-0 m-2">Czech certificate</h4>
+                                        <h4 class="p-0 m-2">Czech Certificate</h4>
                                         <a class="m-2" href="assets/img/certificate/Czech_certificate.webp" data-lightbox="roadtrip" data-title="Czech certificate">
                                             <img class="img-fluid thumb rounded" src="assets/img/certificate/Czech_certificate.webp" alt="Czech certificate"/>
                                         </a>
                                     </div>
                                     <div class="col text-center">
-                                        <h4 class="p-0 m-2">English certificate</h4>
+                                        <h4 class="p-0 m-2">English Certificate</h4>
                                         <a class="m-2" href="assets/img/certificate/English_certificate.webp" data-lightbox="roadtrip" data-title="English certificate">
                                             <img class="img-fluid thumb rounded" src="assets/img/certificate/English_certificate.webp" alt="English certificate"/>
                                         </a>
@@ -256,9 +255,15 @@
                                         </a>
                                     </div>
                                     <div class="col text-center">
-                                        <h4 class="p-0 m-2">IT skills test</h4>
+                                        <h4 class="p-0 m-2">IT Skills Certificate</h4>
                                         <a class="m-2" href="assets/img/certificate/IT_skills_test.webp" data-lightbox="roadtrip" data-title="IT skills test">
                                             <img class="img-fluid thumb rounded" src="assets/img/certificate/IT_skills_test.webp" alt="IT skills test"/>
+                                        </a>
+                                    </div>
+                                    <div class="col text-center">
+                                        <h4 class="p-0 m-2">IT English Certificate</h4>
+                                        <a class="m-2" href="assets/img/certificate/IT_English.webp" data-lightbox="roadtrip" data-title="IT English">
+                                            <img class="img-fluid thumb rounded" src="assets/img/certificate/IT_English.webp" alt="IT English"/>
                                         </a>
                                     </div>
                                 </div>
@@ -398,7 +403,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col">
-                                        <p><i class="fa-solid fa-chalkboard-user me-1"></i>Trainability/ Learnability</p>
+                                        <p><i class="fa-solid fa-chalkboard-user me-1"></i>Learnability/ Trainability</p>
                                     </div>
                                     <div class="col">
                                         <div class="progress">
