@@ -31,7 +31,7 @@
 
   <body>
     <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav data-aos="fade-down" data-aos-duration="1500" class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#"><i class="fas fa-user me-1"></i>Valeriia Kuznetsova</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +88,7 @@
         </div>
     </nav>
     <!--HEADER-->
-    <header class="mt-5 mb-5" id="welcome">
+    <header data-aos="flip-up" data-aos-duration="1500" class="mt-5 mb-5" id="welcome">
         <div class="container">
             <div class="row g-4">
                 <div class="col-12">
@@ -114,7 +114,7 @@
         <div class="container">
             <div class="row justify-content-center align-items-start g-4">
                 <div class="col-sm-12 col-md-3 col-xl-3 col-xxl-3">
-                    <div class="card">
+                    <div data-aos="fade-right" data-aos-duration="1000" class="card">
                         <div id="personal_info" class="card-header">
                             <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-user fw-bold me-1"></i></i>Personal Info</h5>
                         </div> 
@@ -125,25 +125,25 @@
                             <p class=""> 31 y.o.</p>
                         </div>
                     </div>
-                    <div class="card mt-3">
+                    <div data-aos="fade-right" data-aos-duration="1500" class="card mt-3">
                         <div id="contacts" class="card-header">
                             <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-address-book me-1"></i>Contacts</h5>
                         </div>
                         <div class="card-body">
                             <p><i class="fa-regular fa-envelope fw-bold me-1"></i>Email</p>
-                            <a target="_blank" class="text-primary text-decoration-none mb-0" href="v42289724@gmail.com">v42289724@gmail.com</a>
+                            <p class=""><a target="_blank" class="text-primary text-decoration-none" href="v42289724@gmail.com">v42289724@gmail.com</a></p>
                         </div>
                     </div>
-                    <div class="card mt-3">
+                    <div data-aos="fade-right" data-aos-duration="2000" class="card mt-3">
                         <div id="media" class="card-header">
                             <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-hashtag me-1"></i>Social Media</h5>
                         </div>
                         <div class="card-body pt-3">
-                            <p><a target="_blank" href="https://www.linkedin.com/in/valeriia-kuznetsova/" class="text-primary"><i class="fa-brands fa-linkedin me-1"></i>Linkedin</a></p>                    
-                            <p><a target="_blank" href="https://github.com/TempPolarBear" class="text-primary"><i class="fa-brands fa-github me-1"></i>GitHub</a></p>
+                            <p class="mb-3 mt-0 me-0 ms-0 p-0"><a target="_blank" href="https://www.linkedin.com/in/valeriia-kuznetsova/" class="text-primary"><i class="fa-brands fa-linkedin me-1"></i>Linkedin</a></p>                    
+                            <p class=""><a target="_blank" href="https://github.com/TempPolarBear" class="text-primary"><i class="fa-brands fa-github me-1"></i>GitHub</a></p>
                         </div>
                     </div>
-                    <div class="card mt-3">
+                    <div data-aos="fade-right" data-aos-duration="2500" class="card mt-3">
                         <div id="languages" class="card-header">
                             <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-language me-1"></i>Languages</h5>
                         </div>
@@ -158,7 +158,7 @@
                 <div class="col">
                     <!-- EXPIRENCE -->
                     <section id="expirence">
-                        <div class="card">
+                        <div data-aos="fade-left" data-aos-duration="1000" class="card">
                             <div class="card-header">
                                 <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-code-fork me-1"></i>Expirence</h5>
                             </div>    
@@ -184,7 +184,7 @@
                     </section> 
                     <!-- PROJECTS -->
                     <section id="projects">
-                        <div class="card mt-3">
+                        <div data-aos="fade-left" data-aos-duration="1500" class="card mt-3">
                             <div class="card-header ">
                                 <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-folder-open me-1"></i></i>Projects</h5>
                             </div>
@@ -257,49 +257,73 @@
                         </div>
                     <!-- CERTIFICATE -->
                      <section id="certificate">
-                        <div class="card mt-3">
+                        <div data-aos="fade-left" data-aos-duration="2000" class="card mt-3">
                             <div class="card-header">
                                 <h5 class="m-0 p-0"><i class="fa-solid fa-medal me-1"></i>Certificate</h5>
                             </div>
                             <div class="card-body">
-                                <div class="row justify-content-center align-items-center">
-                                    <div class="col text-center">
-                                        <h4 class="p-0 m-2">Czech Certificate</h4>
-                                        <a class="m-2" href="assets/img/certificate/Czech_certificate.webp" data-lightbox="roadtrip" data-title="Czech certificate">
-                                            <img class="img-fluid thumb rounded" src="assets/img/certificate/Czech_certificate.webp" alt="Czech certificate"/>
-                                        </a>
+                                <!-- Slider main container -->
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="text-center">
+                                               <h4 class="p-0 m-2">Czech Certificate</h4>
+                                                <a class="m-2" href="assets/img/certificate/Czech_certificate.webp" data-lightbox="roadtrip" data-title="Czech certificate">
+                                                    <img width="200" height="200" class="img-fluid thumb rounded" src="assets/img/certificate/Czech_certificate.webp" alt="Czech certificate"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="text-center">
+                                                <h4 class="p-0 m-2">English Certificate</h4>
+                                                <a class="m-2" href="assets/img/certificate/English_certificate.webp" data-lightbox="roadtrip" data-title="English certificate">
+                                                    <img width="200" height="200" class="img-fluid thumb rounded" src="assets/img/certificate/English_certificate.webp" alt="English certificate"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="col text-center">
+                                                <h4 class="p-0 m-2">Diploma Bachelor's</h4>
+                                                <a class="m-2" href="assets/img/certificate/Diploma_bachelor's.webp" data-lightbox="roadtrip" data-title="Diploma Bachelor's">
+                                                    <img width="200" height="200" class="img-fluid thumb rounded" src="assets/img/certificate/Diploma_bachelor's.webp" alt="Diploma Bachelor's"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="col text-center">
+                                                <h4 class="p-0 m-2">IT Skills Certificate</h4>
+                                                <a class="m-2" href="assets/img/certificate/IT_skills_test.webp" data-lightbox="roadtrip" data-title="IT skills test">
+                                                    <img width="200" height="200" class="img-fluid thumb rounded" src="assets/img/certificate/IT_skills_test.webp" alt="IT skills test"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="col text-center">
+                                                <h4 class="p-0 m-2">IT English Certificate</h4>
+                                                <a class="m-2" href="assets/img/certificate/IT_English.webp" data-lightbox="roadtrip" data-title="IT English">
+                                                    <img width="200" height="200" class="img-fluid thumb rounded" src="assets/img/certificate/IT_English.webp" alt="IT English"/>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col text-center">
-                                        <h4 class="p-0 m-2">English Certificate</h4>
-                                        <a class="m-2" href="assets/img/certificate/English_certificate.webp" data-lightbox="roadtrip" data-title="English certificate">
-                                            <img class="img-fluid thumb rounded" src="assets/img/certificate/English_certificate.webp" alt="English certificate"/>
-                                        </a>
-                                    </div>
-                                    <div class="col text-center">
-                                        <h4 class="p-0 m-2">Diploma Bachelor's</h4>
-                                        <a class="m-2" href="assets/img/certificate/Diploma_bachelor's.webp" data-lightbox="roadtrip" data-title="Diploma Bachelor's">
-                                            <img class="img-fluid thumb rounded" src="assets/img/certificate/Diploma_bachelor's.webp" alt="Diploma Bachelor's"/>
-                                        </a>
-                                    </div>
-                                    <div class="col text-center">
-                                        <h4 class="p-0 m-2">IT Skills Certificate</h4>
-                                        <a class="m-2" href="assets/img/certificate/IT_skills_test.webp" data-lightbox="roadtrip" data-title="IT skills test">
-                                            <img class="img-fluid thumb rounded" src="assets/img/certificate/IT_skills_test.webp" alt="IT skills test"/>
-                                        </a>
-                                    </div>
-                                    <div class="col text-center">
-                                        <h4 class="p-0 m-2">IT English Certificate</h4>
-                                        <a class="m-2" href="assets/img/certificate/IT_English.webp" data-lightbox="roadtrip" data-title="IT English">
-                                            <img class="img-fluid thumb rounded" src="assets/img/certificate/IT_English.webp" alt="IT English"/>
-                                        </a>
-                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+
+                                    <!-- If we need scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
                                 </div>
                             </div>
                         </div>
                      </section>
                     <!-- EDUCATION -->
                     <section id="education">
-                        <div class="card mt-3">
+                        <div data-aos="fade-left" data-aos-duration="2500" class="card mt-3">
                             <div class="card-header ">
                                 <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-graduation-cap me-1"></i>Education</h5>
                             </div>
@@ -314,9 +338,9 @@
                     </section>
                     <!-- SKILLS -->
                     <section id="hard_skills">
-                        <div class="card mt-3">
+                        <div data-aos="fade-left" data-aos-duration="3000" class="card mt-3">
                             <div class="card-header">
-                                <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-laptop-code me-1"></i>Hard Skills</h5>
+                                <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-laptop-code me-1"></i>Hard (T-Shaped) Skills</h5>
                             </div>
                             <div class="card-body">
                                 <div class="row">
@@ -423,7 +447,7 @@
                         </div>
                     </section>
                     <section id="soft_skills">
-                        <div class="card mt-3">
+                        <div data-aos="fade-left" data-aos-duration="3000" class="card mt-3">
                             <div class="card-header">
                                 <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-heart me-1"></i>Soft Skills</h5>
                             </div>
