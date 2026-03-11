@@ -31,7 +31,7 @@
 
   <body>
     <!-- NAV BAR -->
-    <nav data-aos="fade-down" data-aos-duration="1500" class="navbar navbar-expand-lg navbar-light">
+    <nav data-aos="fade-down" data-aos-duration="1500" class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><i class="fas fa-user me-1"></i>Valeriia Kuznetsova</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,6 +49,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#personal_info"><i class="fa-solid fa-user fw-bold me-1"></i>Personal Info</a></li>
+                            <li><a class="dropdown-item" href="#personal_info"><i class="fa-solid fa-map-pin fw-bold me-1"></i>Availability</a></li>
                             <li><a class="dropdown-item" href="#contacts"><i class="fa-solid fa-address-book me-1"></i>Contacts</a></li>
                             <li><a class="dropdown-item" href="#languages"><i class="fa-solid fa-language me-1"></i>Languages</a></li>
                             <li><a class="dropdown-item" href="#media"><i class="fa-solid fa-hashtag me-1"></i>Social Media</a></li>
@@ -91,19 +92,23 @@
     <header data-aos="flip-up" data-aos-duration="1500" class="mt-5 mb-5" id="welcome">
         <div class="container">
             <div class="row g-4">
-                <div class="col-12">
-                    <div class="bg-header text-light rounded-2 p-5 d-flex align-items-center min-vh-100">
+                <div class="col-6">
+                    <div class="rounded-2 p-5 d-flex align-items-center min-vh-75">
                         <div>
                             <h2 class="fw-bold mb-4">Hello i'm Valeriia Kuznetsova</h2>
                             <p>
                                 <i class="fa-solid fa-graduation-cap me-1 mb-3"></i>Junior Frontend Developer & UI/UX Enthusiast<br>
-                                <i class="fa-solid fa-desktop me-1 mb-3"></i>HTML, CSS & Bootstrap <br>
-                                <i class="fa-solid fa-book-bookmark me-1 mb-3"></i>Learning JS <br>
-                                <i class="fa-solid fa-palette me-1 mb-3"></i>Creating projects & planning more <br>
-                                <i class="fa-solid fa-people-group me-1 mb-3"></i>Open to collaboration and new opportunities
+                                <i class="fa-solid fa-desktop me-1 mb-3"></i>HTML, CSS & Bootstrap<br>
+                                <i class="fa-solid fa-book-bookmark me-1 mb-3"></i>Learning JS<br>
+                                <i class="fa-solid fa-palette me-1 mb-3"></i>Creating projects & planning more<br>
+                                <i class="fa-solid fa-people-group me-1 mb-3"></i>Open to collaboration and new opportunities<br>
+                                <i class="fa-solid fa-laptop-code me-1 mb-3"></i>Passionate about building responsive and user-friendly websites.
                             </p>
                         </div>
                     </div>
+                </div>
+                <div class="col-6 fixed-centr ">
+                    <img src="/assets/img/photo/my_photo.webp" class="rounded-circle img-fluid" height="160" width="180" alt="Valeriia Kuznetsova">
                 </div>
             </div>
         </div>
@@ -209,9 +214,10 @@
                                                 <a class="m-2" href="assets/img/portfolio/nft.webp" data-lightbox="roadtrip" data-title="NFT for Music">
                                                     <img class="img-fluid thumb rounded" width="100" height="100" src="assets/img/portfolio/nft.webp" alt="NFT for Music" />
                                                 </a>
-                                                <div class="d-grid gap-2 m-2">
-                                                    <a id="test" class="btn btn-outline-secondary" href="https://temppolarbear.github.io/nft_for_music_creators/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
-                                                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This is a design concept for a web platform for music creators, where artists can release, sell, and promote their music NFTs"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                <div class="d-flex flex-column align-items-center gap-2 m-2">
+                                                    <a id="test" class="btn btn-secondary w-50" href="https://temppolarbear.github.io/nft_for_music_creators/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                                    <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This is a design concept for a web platform for music creators, where artists can release, sell, and promote their music NFTs"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                    <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML/CSS, Bootstrap"><i class="fa-solid fa-file-code me-1"></i>Technologies</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -221,9 +227,10 @@
                                                 <a class="m-2" href="assets/img/portfolio/appello.webp" data-lightbox="roadtrip" data-title="Appello">
                                                     <img class="img-fluid thumb rounded" width="100" height="100" src="assets/img/portfolio/appello.webp" alt="Appello"/>
                                                 </a>
-                                                <div class="d-grid gap-2 m-2">
-                                                    <a class="btn btn-outline-secondary" href="https://temppolarbear.github.io/appello/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
-                                                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Appello is a website for a digital product development company that creates mobile applications, web platforms, and turnkey software solutions. The website presents services in UX/UI design, prototyping, testing, development, and project support. It also shows a portfolio of real cases, information about the team, stages of work, and open vacancies. The company positions itself as an international studio with a high level of expertise and extensive experience in creating commercial applications."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                <div class="d-flex flex-column align-items-center gap-2 m-2">
+                                                    <a class="btn btn-secondary w-50" href="https://temppolarbear.github.io/appello/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                                        <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Appello is a website for a digital product development company that creates mobile applications, web platforms, and turnkey software solutions. The website presents services in UX/UI design, prototyping, testing, development, and project support. It also shows a portfolio of real cases, information about the team, stages of work, and open vacancies. The company positions itself as an international studio with a high level of expertise and extensive experience in creating commercial applications."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                        <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML/CSS, Bootstrap"><i class="fa-solid fa-file-code me-1"></i>Technologies</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -233,9 +240,10 @@
                                                 <a class="m-2" href="assets/img/portfolio/barbershop.webp" data-lightbox="roadtrip" data-title="Barbershop">
                                                     <img class="img-fluid thumb rounded" width="100" height="100" src="assets/img/portfolio/barbershop.webp" alt="Barbershop"/>
                                                 </a>
-                                                <div class="d-grid gap-2 m-2">
-                                                    <a class="btn btn-outline-secondary" href=" https://temppolarbear.github.io/barbershop/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
-                                                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Barbershop is a modern website concept for a barbershop offering haircuts, beard care, and grooming services. The design highlights services, prices, barbers, a gallery of works, and booking options, using a clean and stylish visual style."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                <div class="d-flex flex-column align-items-center gap-2 m-2">
+                                                    <a class="btn btn-secondary w-50" href=" https://temppolarbear.github.io/barbershop/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                                        <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Barbershop is a modern website concept for a barbershop offering haircuts, beard care, and grooming services. The design highlights services, prices, barbers, a gallery of works, and booking options, using a clean and stylish visual style."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                        <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML/CSS, Bootstrap"><i class="fa-solid fa-file-code me-1"></i>Technologies</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -245,9 +253,10 @@
                                                 <a class="m-2" href="assets/img/portfolio/covid.webp" data-lightbox="roadtrip" data-title="Covid">
                                                     <img class="img-fluid thumb rounded" width="100" height="100" src="assets/img/portfolio/covid.webp" alt="Covid"/>
                                                 </a>
-                                                <div class="d-grid gap-2 m-2">
-                                                    <a class="btn btn-outline-secondary" href="https://temppolarbear.github.io/covid/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
-                                                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Design prototype for an information resource about COVID-19, not an official medical or government platform. Could be a concept for a project aimed at informing people about the coronavirus"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                <div class="d-flex flex-column align-items-center gap-2 m-2">
+                                                    <a class="btn btn-secondary w-50" href="https://temppolarbear.github.io/covid/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                                        <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Design prototype for an information resource about COVID-19, not an official medical or government platform. Could be a concept for a project aimed at informing people about the coronavirus"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                        <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML/CSS"><i class="fa-solid fa-file-code me-1"></i>Technologies</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -560,6 +569,13 @@
     </main>
     <!-- Boostrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    </script>
     
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
