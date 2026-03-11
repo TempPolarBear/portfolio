@@ -16,6 +16,12 @@
     <!-- FontAwesome CSS -->  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Our CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -183,51 +189,72 @@
                                 <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-folder-open me-1"></i></i>Projects</h5>
                             </div>
                             <div class="card-body">
-                                <div class="row justify-content-center align-items-center">
-                                    <div class="col text-center">
-                                        <h4 class="p-0 m-2">NFT for Music</h4>
-                                        <a class="m-2" href="assets/img/portfolio/nft.webp" data-lightbox="roadtrip" data-title="NFT for Music">
-                                            <img class="img-fluid thumb rounded" src="assets/img/portfolio/nft.webp" alt="NFT for Music" />
-                                        </a>
-                                        <div class="d-grid gap-2 m-2">
-                                            <a id="test" class="btn btn-outline-secondary" href="https://temppolarbear.github.io/nft_for_music_creators/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
-                                            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This is a design concept for a web platform for music creators, where artists can release, sell, and promote their music NFTs"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                <!-- Slider main container -->
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="text-center">
+                                                <h4 class="p-0 m-2">NFT for Music</h4>
+                                                <a class="m-2" href="assets/img/portfolio/nft.webp" data-lightbox="roadtrip" data-title="NFT for Music">
+                                                    <img class="img-fluid thumb rounded" width="100" height="100" src="assets/img/portfolio/nft.webp" alt="NFT for Music" />
+                                                </a>
+                                                <div class="d-grid gap-2 m-2">
+                                                    <a id="test" class="btn btn-outline-secondary" href="https://temppolarbear.github.io/nft_for_music_creators/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                                    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This is a design concept for a web platform for music creators, where artists can release, sell, and promote their music NFTs"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="text-center">
+                                                <h4 class="p-0 m-2">Appello</h4>
+                                                <a class="m-2" href="assets/img/portfolio/appello.webp" data-lightbox="roadtrip" data-title="Appello">
+                                                    <img class="img-fluid thumb rounded" width="100" height="100" src="assets/img/portfolio/appello.webp" alt="Appello"/>
+                                                </a>
+                                                <div class="d-grid gap-2 m-2">
+                                                    <a class="btn btn-outline-secondary" href="https://temppolarbear.github.io/appello/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Appello is a website for a digital product development company that creates mobile applications, web platforms, and turnkey software solutions. The website presents services in UX/UI design, prototyping, testing, development, and project support. It also shows a portfolio of real cases, information about the team, stages of work, and open vacancies. The company positions itself as an international studio with a high level of expertise and extensive experience in creating commercial applications."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="col text-center">
+                                                <h4 class="p-0 m-2">Barbershop</h4>
+                                                <a class="m-2" href="assets/img/portfolio/barbershop.webp" data-lightbox="roadtrip" data-title="Barbershop">
+                                                    <img class="img-fluid thumb rounded" width="100" height="100" src="assets/img/portfolio/barbershop.webp" alt="Barbershop"/>
+                                                </a>
+                                                <div class="d-grid gap-2 m-2">
+                                                    <a class="btn btn-outline-secondary" href=" https://temppolarbear.github.io/barbershop/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Barbershop is a modern website concept for a barbershop offering haircuts, beard care, and grooming services. The design highlights services, prices, barbers, a gallery of works, and booking options, using a clean and stylish visual style."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="col text-center">
+                                                <h4 class="p-0 m-2">Covid</h4>
+                                                <a class="m-2" href="assets/img/portfolio/covid.webp" data-lightbox="roadtrip" data-title="Covid">
+                                                    <img class="img-fluid thumb rounded" width="100" height="100" src="assets/img/portfolio/covid.webp" alt="Covid"/>
+                                                </a>
+                                                <div class="d-grid gap-2 m-2">
+                                                    <a class="btn btn-outline-secondary" href="https://temppolarbear.github.io/covid/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Design prototype for an information resource about COVID-19, not an official medical or government platform. Could be a concept for a project aimed at informing people about the coronavirus"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col text-center">
-                                        <h4 class="p-0 m-2">Appello</h4>
-                                        <a class="m-2" href="assets/img/portfolio/appello.webp" data-lightbox="roadtrip" data-title="Appello">
-                                            <img class="img-fluid thumb rounded" src="assets/img/portfolio/appello.webp" alt="Appello"/>
-                                        </a>
-                                        <div class="d-grid gap-2 m-2">
-                                            <a class="btn btn-outline-secondary" href="https://temppolarbear.github.io/appello/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
-                                             <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Appello is a website for a digital product development company that creates mobile applications, web platforms, and turnkey software solutions. The website presents services in UX/UI design, prototyping, testing, development, and project support. It also shows a portfolio of real cases, information about the team, stages of work, and open vacancies. The company positions itself as an international studio with a high level of expertise and extensive experience in creating commercial applications."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
-                                        </div>
-                                    </div>
-                                    <div class="col text-center">
-                                        <h4 class="p-0 m-2">Barbershop</h4>
-                                        <a class="m-2" href="assets/img/portfolio/barbershop.webp" data-lightbox="roadtrip" data-title="Barbershop">
-                                            <img class="img-fluid thumb rounded" src="assets/img/portfolio/barbershop.webp" alt="Barbershop"/>
-                                        </a>
-                                        <div class="d-grid gap-2 m-2">
-                                            <a class="btn btn-outline-secondary" href=" https://temppolarbear.github.io/barbershop/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
-                                             <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Barbershop is a modern website concept for a barbershop offering haircuts, beard care, and grooming services. The design highlights services, prices, barbers, a gallery of works, and booking options, using a clean and stylish visual style."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
-                                        </div>
-                                    </div>
-                                    <div class="col text-center">
-                                        <h4 class="p-0 m-2">Covid</h4>
-                                        <a class="m-2" href="assets/img/portfolio/covid.webp" data-lightbox="roadtrip" data-title="Covid">
-                                            <img class="img-fluid thumb rounded" src="assets/img/portfolio/covid.webp" alt="Covid"/>
-                                        </a>
-                                        <div class="d-grid gap-2 m-2">
-                                            <a class="btn btn-outline-secondary" href="https://temppolarbear.github.io/covid/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
-                                             <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Design prototype for an information resource about COVID-19, not an official medical or government platform. Could be a concept for a project aimed at informing people about the coronavirus"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
-                                        </div>
-                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+
+                                    <!-- If we need scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
                                 </div>
                             </div>
                         </div>
-                    </section>
                     <!-- CERTIFICATE -->
                      <section id="certificate">
                         <div class="card mt-3">
@@ -509,6 +536,14 @@
 
     <!-- Smooth Scroll JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js" integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/swiper.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/aos.js"></script>
 
     <!-- Our own scripts -->
     <script src="assets/js/script.js"></script>

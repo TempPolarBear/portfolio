@@ -13,3 +13,8 @@
   object-fit: cover;
   object-position: top;
 }
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
