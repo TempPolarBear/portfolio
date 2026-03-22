@@ -13,6 +13,37 @@ Technologies: HTML, CSS, Bootstrap
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 45px;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: black !important;
+  background: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.swiper-pagination {
+  bottom: 18px !important;
+}
+
+.swiper-scrollbar {
+  bottom: 0 !important;
 }
