@@ -31,7 +31,7 @@
 
   <body>
     <!-- NAV BAR -->
-    <nav data-aos="fade-down" data-aos-duration="1500" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav data-aos="fade-down" data-aos-duration="1500" class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
         <div class="container">
             <a class="navbar-brand" href="#"><i class="fas fa-user me-1"></i>Valeriia Kuznetsova</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,9 +57,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-info me-1"></i>
-                            Portfolio
-                        </a>
+                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-info me-1"></i>Portfolio</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="nav-link" href="#expirence"><i class="fa-solid fa-code-fork me-1"></i>Expirence</a></li>
                             <li><a class="nav-link" href="#projects"><i class="fa-solid fa-folder-open me-1"></i></i>Projects</a></li>
@@ -91,8 +89,8 @@
     <!--HEADER-->
     <header data-aos="flip-up" data-aos-duration="1500" class="mt-5 mb-5" id="welcome">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-6">
+            <div class="row row-cols-1 row-cols-lg-2 g-4 justify-content-center align-items-center">
+                <div class="col">
                     <div class="rounded-2 p-5 d-flex align-items-center min-vh-75">
                         <div>
                             <h2 class="fw-bold mb-4">Hello i'm Valeriia Kuznetsova</h2>
@@ -102,13 +100,13 @@
                                 <i class="fa-solid fa-book-bookmark me-1 mb-3"></i>Learning JS<br>
                                 <i class="fa-solid fa-palette me-1 mb-3"></i>Creating projects & planning more<br>
                                 <i class="fa-solid fa-people-group me-1 mb-3"></i>Open to collaboration and new opportunities<br>
-                                <i class="fa-solid fa-laptop-code me-1 mb-3"></i>Passionate about building responsive and user-friendly websites.
+                                <i class="fa-solid fa-laptop-code me-1 mb-3"></i>Passionate about building responsive and user-friendly websites
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 align-self-center text-center">
-                    <img src="/assets/img/photo/my_photo.webp" class="rounded-circle img-fluid" width="300" alt="Valeriia Kuznetsova">
+                <div class="col align-self-center text-center">
+                    <img src="assets/img/photo/my_photo.webp" class="rounded-circle img-fluid zoomInOut" width="300" alt="Valeriia Kuznetsova">
                 </div>
             </div>
         </div>
@@ -117,8 +115,9 @@
         <!-- PERSONAL INFO -->
         <div class="container">
             <div class="row justify-content-center align-items-start g-4">
-                <div class="col-sm-12 col-md-3 col-xl-3 col-xxl-3">
-                    <div data-aos="fade-right" data-aos-duration="1000" class="card">
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                    <!-- INFO -->
+                    <div data-aos="fade-right" data-aos-duration="1000" class="card zoomInOut">
                         <div id="personal_info" class="card-header">
                             <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-user fw-bold me-1"></i></i>Personal Info</h5>
                         </div> 
@@ -129,7 +128,8 @@
                             <p class=""> 31 y.o.</p>
                         </div>
                     </div>
-                    <div data-aos="fade-right" data-aos-duration="1000" class="card mt-3">
+                    <!-- AVAILABILITY -->
+                    <div data-aos="fade-right" data-aos-duration="1000" class="card mt-3 zoomInOut">
                         <div id="availability" class="card-header">
                             <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-map-pin fw-bold me-1"></i>Availability</h5>
                         </div> 
@@ -139,25 +139,28 @@
                             <p><i class="fa-solid fa-globe fw-bold me-1"></i>Available for remote work</p>
                         </div>
                     </div>
-                    <div data-aos="fade-right" data-aos-duration="1500" class="card mt-3">
+                    <!-- CONTACTS -->
+                    <div data-aos="fade-right" data-aos-duration="1500" class="card mt-3 zoomInOut">
                         <div id="contacts" class="card-header">
                             <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-address-book me-1"></i>Contacts</h5>
                         </div>
                         <div class="card-body">
                             <p><i class="fa-regular fa-envelope fw-bold me-1"></i>Email</p>
-                            <p class=""><a target="_blank" class="text-primary text-decoration-none" href="v42289724@gmail.com">v42289724@gmail.com</a></p>
+                            <p class="zoomInOut"><a target="_blank" class="text-primary text-decoration-none" href="v42289724@gmail.com">v42289724@gmail.com</a></p>
                         </div>
                     </div>
-                    <div data-aos="fade-right" data-aos-duration="2000" class="card mt-3">
+                    <!-- SOCIAL -->
+                    <div data-aos="fade-right" data-aos-duration="2000" class="card mt-3 zoomInOut">
                         <div id="media" class="card-header">
                             <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-hashtag me-1"></i>Social Media</h5>
                         </div>
                         <div class="card-body pt-3">
-                            <p class="mb-3 mt-0 me-0 ms-0 p-0"><a target="_blank" href="https://www.linkedin.com/in/valeriia-kuznetsova/" class="text-primary"><i class="fa-brands fa-linkedin me-1"></i>Linkedin</a></p>                    
-                            <p class=""><a target="_blank" href="https://github.com/TempPolarBear" class="text-primary"><i class="fa-brands fa-github me-1"></i>GitHub</a></p>
+                            <p class="mb-3 mt-0 me-0 ms-0 p-0 zoomInOut"><a target="_blank" href="https://www.linkedin.com/in/valeriia-kuznetsova/" class="text-primary"><i class="fa-brands fa-linkedin me-1"></i>Linkedin</a></p>                    
+                            <p class="zoomInOut"><a target="_blank" href="https://github.com/TempPolarBear" class="text-primary"><i class="fa-brands fa-github me-1"></i>GitHub</a></p>
                         </div>
                     </div>
-                    <div data-aos="fade-right" data-aos-duration="2500" class="card mt-3">
+                    <!-- LANGUAGE -->
+                    <div data-aos="fade-right" data-aos-duration="2500" class="card zoomInOut mt-3">
                         <div id="languages" class="card-header">
                             <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-language me-1"></i>Languages</h5>
                         </div>
@@ -172,7 +175,7 @@
                 <div class="col">
                     <!-- EXPIRENCE -->
                     <section id="expirence">
-                        <div data-aos="fade-left" data-aos-duration="1000" class="card">
+                        <div data-aos="fade-left" data-aos-duration="1000" class="card zoomInOut">
                             <div class="card-header">
                                 <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-code-fork me-1"></i>Expirence</h5>
                             </div>    
@@ -198,7 +201,7 @@
                     </section> 
                     <!-- PROJECTS -->
                     <section id="projects">
-                        <div data-aos="fade-left" data-aos-duration="1500" class="card mt-3">
+                        <div data-aos="fade-left" data-aos-duration="1500" class="card mt-3 zoomInOut">
                             <div class="card-header ">
                                 <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-folder-open me-1"></i></i>Projects</h5>
                             </div>
@@ -215,9 +218,9 @@
                                                     <img class="img-fluid thumb rounded mb-2" width="150" height="150" src="assets/img/projects/nft-platform.webp" alt="NFT for Music" />
                                                 </a>
                                                 <div class="d-flex flex-column align-items-center gap-2 m-2">
-                                                    <a id="test" class="btn btn-secondary w-50" href="https://temppolarbear.github.io/nft_for_music_creators/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
-                                                    <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This is a design concept for a web platform for music creators, where artists can release, sell, and promote their music NFTs"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
-                                                    <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML/CSS, Bootstrap"><i class="fa-solid fa-file-code me-1"></i>Technologies</button>
+                                                    <a id="test" class="btn btn-secondary w-50 zoomInOut" href="https://temppolarbear.github.io/nft_for_music_creators/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                                    <button type="button" class="btn btn-secondary w-50 zoomInOut" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This is a design concept for a web platform for music creators, where artists can release, sell, and promote their music NFTs"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                    <button type="button" class="btn btn-secondary w-50 zoomInOut" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML/CSS, Bootstrap"><i class="fa-solid fa-file-code me-1"></i>Technologies</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -228,9 +231,9 @@
                                                     <img class="img-fluid thumb rounded mb-2" width="150" height="150" src="assets/img/projects/appello-website.webp" alt="Appello"/>
                                                 </a>
                                                 <div class="d-flex flex-column align-items-center gap-2 m-2">
-                                                    <a class="btn btn-secondary w-50" href="https://temppolarbear.github.io/appello/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
-                                                        <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Appello is a website for a digital product development company that creates mobile applications, web platforms, and turnkey software solutions. The website presents services in UX/UI design, prototyping, testing, development, and project support. It also shows a portfolio of real cases, information about the team, stages of work, and open vacancies. The company positions itself as an international studio with a high level of expertise and extensive experience in creating commercial applications."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
-                                                        <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML/CSS, Bootstrap"><i class="fa-solid fa-file-code me-1"></i>Technologies</button>
+                                                    <a class="btn btn-secondary w-50 zoomInOut" href="https://temppolarbear.github.io/appello/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                                        <button type="button" class="btn btn-secondary w-50 zoomInOut" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Appello is a website for a digital product development company that creates mobile applications, web platforms, and turnkey software solutions. The website presents services in UX/UI design, prototyping, testing, development, and project support. It also shows a portfolio of real cases, information about the team, stages of work, and open vacancies. The company positions itself as an international studio with a high level of expertise and extensive experience in creating commercial applications."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                        <button type="button" class="btn btn-secondary w-50 zoomInOut" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML/CSS, Bootstrap"><i class="fa-solid fa-file-code me-1"></i>Technologies</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -241,9 +244,9 @@
                                                     <img class="img-fluid thumb rounded mb-2" width="150" height="150" src="assets/img/projects/barbershop.webp" alt="Barbershop"/>
                                                 </a>
                                                 <div class="d-flex flex-column align-items-center gap-2 m-2">
-                                                    <a class="btn btn-secondary w-50" href=" https://temppolarbear.github.io/barbershop/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
-                                                        <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Barbershop is a modern website concept for a barbershop offering haircuts, beard care, and grooming services. The design highlights services, prices, barbers, a gallery of works, and booking options, using a clean and stylish visual style."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
-                                                        <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML/CSS, Bootstrap"><i class="fa-solid fa-file-code me-1"></i>Technologies</button>
+                                                    <a class="btn btn-secondary w-50 zoomInOut" href=" https://temppolarbear.github.io/barbershop/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                                        <button type="button" class="btn btn-secondary w-50 zoomInOut" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Barbershop is a modern website concept for a barbershop offering haircuts, beard care, and grooming services. The design highlights services, prices, barbers, a gallery of works, and booking options, using a clean and stylish visual style."><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                        <button type="button" class="btn btn-secondary w-50 zoomInOut" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML/CSS, Bootstrap"><i class="fa-solid fa-file-code me-1"></i>Technologies</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -254,9 +257,9 @@
                                                     <img class="img-fluid thumb rounded mb-2" width="150" height="150" src="assets/img/projects/covid-dashboard.webp" alt="Covid"/>
                                                 </a>
                                                 <div class="d-flex flex-column align-items-center gap-2 m-2">
-                                                    <a class="btn btn-secondary w-50" href="https://temppolarbear.github.io/covid/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
-                                                        <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Design prototype for an information resource about COVID-19, not an official medical or government platform. Could be a concept for a project aimed at informing people about the coronavirus"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
-                                                        <button type="button" class="btn btn-secondary w-50" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML/CSS"><i class="fa-solid fa-file-code me-1"></i>Technologies</button>
+                                                    <a class="btn btn-secondary w-50 zoomInOut" href="https://temppolarbear.github.io/covid/" target="_blank"><i class="fa-solid fa-laptop-code me-1"></i>Go to Site</a>
+                                                        <button type="button" class="btn btn-secondary w-50 zoomInOut" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Design prototype for an information resource about COVID-19, not an official medical or government platform. Could be a concept for a project aimed at informing people about the coronavirus"><i class="fa-solid fa-circle-question me-1"></i>Website information</button>
+                                                        <button type="button" class="btn btn-secondary w-50 zoomInOut" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML/CSS"><i class="fa-solid fa-file-code me-1"></i>Technologies</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -265,17 +268,18 @@
                                     <div class="swiper-pagination"></div>
 
                                     <!-- If we need navigation buttons -->
-                                    <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
-                                    <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                                    <div class="swiper-button-prev zoomInOut"><i class="fa-solid fa-angle-left"></i></div>
+                                    <div class="swiper-button-next zoomInOut"><i class="fa-solid fa-chevron-right"></i></div>
 
                                     <!-- If we need scrollbar -->
                                     <div class="swiper-scrollbar"></div>
                                 </div>
                             </div>
                         </div>
+                    </section>
                     <!-- CERTIFICATE -->
                      <section id="certificate">
-                        <div data-aos="fade-left" data-aos-duration="2000" class="card mt-3">
+                        <div data-aos="fade-left" data-aos-duration="2000" class="card mt-3 zoomInOut">
                             <div class="card-header">
                                 <h5 class="m-0 p-0"><i class="fa-solid fa-medal me-1"></i>Certificate</h5>
                             </div>
@@ -330,8 +334,8 @@
                                     <div class="swiper-pagination"></div>
 
                                     <!-- If we need navigation buttons -->
-                                    <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
-                                    <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                                    <div class="swiper-button-prev zoomInOut"><i class="fa-solid fa-angle-left"></i></div>
+                                    <div class="swiper-button-next zoomInOut"><i class="fa-solid fa-chevron-right"></i></div>
 
                                     <!-- If we need scrollbar -->
                                     <div class="swiper-scrollbar"></div>
@@ -341,14 +345,14 @@
                      </section>
                     <!-- EDUCATION -->
                     <section id="education">
-                        <div data-aos="fade-left" data-aos-duration="2500" class="card mt-3">
+                        <div data-aos="fade-left" data-aos-duration="2500" class="card mt-3 zoomInOut">
                             <div class="card-header ">
                                 <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-graduation-cap me-1"></i>Education</h5>
                             </div>
                             <div class="card-body">
                                     <p><i class="fa-solid fa-building-columns me-1"></i>University: Odesa National University of Technology</p>
                                     <p><i class="fa-solid fa-graduation-cap me-1"></i>Degree: Bachelor</a></p>
-                                    <p><i class="fa-solid fa-location-dot me-1"></i>Location: Odessa, Ukrain</p>
+                                    <p><i class="fa-solid fa-location-dot me-1"></i>Location: Odessa, Ukraine</p>
                                     <p><i class="fa-solid fa-calendar-days me-1"></i>Study Period: 2020-2022</p>
                                     <p><i class="fa-solid fa-circle-info me-1"></i>Description: Focused on analytical thinking, project work and problem solving</p>
                             </div>
@@ -356,7 +360,8 @@
                     </section>
                     <!-- SKILLS -->
                     <section id="hard_skills">
-                        <div data-aos="fade-left" data-aos-duration="3000" class="card mt-3">
+                        <!-- HARD -->
+                        <div data-aos="fade-left" data-aos-duration="3000" class="card mt-3 zoomInOut">
                             <div class="card-header">
                                 <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-laptop-code me-1"></i>Hard (T-Shaped) Skills</h5>
                             </div>
@@ -464,8 +469,9 @@
                             </div>
                         </div>
                     </section>
+                    <!-- SOFT -->
                     <section id="soft_skills">
-                        <div data-aos="fade-left" data-aos-duration="3000" class="card mt-3">
+                        <div data-aos="fade-left" data-aos-duration="3000" class="card mt-3 zoomInOut">
                             <div class="card-header">
                                 <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-heart me-1"></i>Soft Skills</h5>
                             </div>
@@ -567,6 +573,60 @@
             </div>
         </div>
     </main>
+    <footer class="">
+        <div class="container">
+            <div class="row pt-2 pb-2 mt-4 mb-4">
+                <div class="col">
+                    <h5 class="m-0 p-0 pb-3 fw-bold">Personal Info</h5>
+                        <div class="card-body">
+                            <p><i class="fa-regular fa-envelope fw-bold me-1"></i>Email</p>
+                            <p class="zoomInOut"><a target="_blank" class="text-primary text-decoration-none" href="v42289724@gmail.com">v42289724@gmail.com</a></p>
+                        </div>
+                        <div class="card-body">
+                            <p class="m-0 p-0 mb-3 fw-bold"><i class="fa-solid fa-hashtag me-1"></i>Social Media</p>
+                            <p class="mb-3 mt-0 me-0 ms-0 p-0 zoomInOut"><a target="_blank" href="https://www.linkedin.com/in/valeriia-kuznetsova/" class="text-primary"><i class="fa-brands fa-linkedin me-1"></i>Linkedin</a></p>                    
+                            <p class="zoomInOut"><a target="_blank" href="https://github.com/TempPolarBear" class="text-primary"><i class="fa-brands fa-github me-1"></i>GitHub</a></p>
+                        </div>  
+                </div>
+                <div class="col">
+                    <h5 class="fw-bold mb-3">General Info</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <p class="zoomInOut"><a href="#personal_info" class="text-decoration-none text-dark footer-link"><i class="fa-solid fa-user me-2"></i>Personal Info</a></p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="zoomInOut"><a href="#availability" class="text-decoration-none text-dark footer-link"><i class="fa-solid fa-map-pin me-2"></i>Availability</a></p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="zoomInOut"><a href="#contacts" class="text-decoration-none text-dark footer-link"><i class="fa-solid fa-address-book me-2"></i>Contacts</a></p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="zoomInOut"><a href="#languages" class="text-decoration-none text-dark footer-link"><i class="fa-solid fa-language me-2"></i>Languages</a></p>
+                            </li>
+                            <li>
+                                <p class="zoomInOut"><a href="#media" class="text-decoration-none text-dark footer-link"><i class="fa-solid fa-hashtag me-2"></i>Social Media</a></p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="col">
+                    <h5 class="m-0 p-0 pb-3 fw-bold">Portfolio</h5>
+                        <ul class="list-unstyled">
+                            <li><p  class="zoomInOut"><a class="text-decoration-none text-dark footer-link" href="#expirence"><i class="fa-solid fa-code-fork me-1"></i>Expirence</a></li></p>
+                            <li><p  class="zoomInOut"><a class="text-decoration-none text-dark footer-link" href="#projects"><i class="fa-solid fa-folder-open me-1"></i></i>Projects</a></li></p>
+                            <li><p  class="zoomInOut"><a class="text-decoration-none text-dark footer-link" href="#certificate"><i class="fa-solid fa-medal me-1"></i>Certificate</a></li></p>
+                            <li><p  class="zoomInOut"><a class="text-decoration-none text-dark footer-link" href="#education"><i class="fa-solid fa-graduation-cap me-1"></i>Education</a></li></p>
+                        </ul>
+                </div>
+                <div class="col">
+                    <h5 class="m-0 p-0 pb-3 fw-bold">Skills</h5>
+                        <ul class="list-unstyled">
+                            <li><p  class="zoomInOut"><a class="text-decoration-none text-dark footer-link" href="#hard_skills"><i class="fa-solid fa-laptop-code me-1"></i>Hard Skills</a></li></p>
+                            <li><p  class="zoomInOut"><a class="text-decoration-none text-dark footer-link" href="#soft_skills"><i class="fa-solid fa-heart me-1"></i>Soft Skills</a></li></p>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- Boostrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script>

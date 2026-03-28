@@ -6,6 +6,18 @@ Technologies: HTML, CSS, Bootstrap
 =====================================
 */
 
+html {
+  overflow-x: hidden !important;
+}
+
+.zoomInOut {
+  transition: transform 1s !important;
+}
+
+.zoomInOut:hover {
+  transform: scale(1.05) !important;
+}
+
 .thumb {
   aspect-ratio: 1/ 1;
   object-fit: cover;
@@ -31,7 +43,7 @@ Technologies: HTML, CSS, Bootstrap
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .swiper-button-prev::after,
