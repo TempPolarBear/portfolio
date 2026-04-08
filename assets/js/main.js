@@ -23,3 +23,21 @@ themeToggle.addEventListener("change", () => {
     // меняем атрибут темы на режим темы для тега html (root)
     root.setAttribute("data-bs-theme", mode)
 });
+
+//
+let expression = "";
+//
+function press(num) {
+    //
+    expression += num;
+    //
+    document.getElementById("display").value = expression;
+}
+//
+function calculate() {
+    //
+    expression = eval(expression).toString();
+    //
+    document.getElementById("display").value = expression;
+}
+
