@@ -26,14 +26,27 @@ themeToggle.addEventListener("change", () => {
 
 //
 let expression = "";
+
 //
 function press(num) {
-    //
+    // список операторов
+    let operators = ["+", "-", "*", "/"];
+    // берём последний символ
+    let lastChar = expression.slice(-1);
+    // если нажали оператор
+    if (operators.includes(num)) {
+        // и последний символ тоже оператор
+        if (operators.includes(lastChar)) {
+            return; // ничего не делаем 
+        }
+    }
+
+    // если всё ок — добавляем
     expression += num;
-    //
     document.getElementById("display").value = expression;
 }
-//
+
+// функция для сложения и вычитания
 function calculate() {
     //
     expression = eval(expression).toString();
@@ -41,3 +54,7 @@ function calculate() {
     document.getElementById("display").value = expression;
 }
 
+// функция для очистки дисплея
+function clearDisplay() {
+
+}

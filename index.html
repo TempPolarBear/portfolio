@@ -573,60 +573,223 @@
                             </div>
                         </div>
                     </section>
+                    <!--UTILLS-->
+                    <section id="utils">
+                        <div data-aos="fade-left" data-aos-duration="2000" class="card mt-3 zoomInOut">
+                            <div class="card-header">
+                                <h5 class="m-0 p-0"><i class="fa-solid fa-medal me-1"></i>Utils</h5>
+                            </div>
+                            <div class="card-body">
+                                <!-- Slider main container -->
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-calculator"></i>Calculator</h5>
+                                                    </div>
+                                                    <div class="card-body bg-dark-50">
+                                                        <input type="text" id="display" class="form-control text-end zoomInOut" placeholder="456 + 23">
+                                                        <div class="row row-cols-4 g-2 mt-1 mb-1">
+                                                            <div class="col">
+                                                                <button type="button" onclick="clearDisplay()" class="btn btn-danger w-100 zoomInOut">C</button>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button type="button" onclick="press('/')" class="btn btn-secondary w-100 zoomInOut">/</button>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button type="button" onclick="press('*')" class="btn btn-secondary w-100 zoomInOut">*</button>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button type="button" onclick="press('-')" class="btn btn-secondary w-100 zoomInOut">-</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row row-cols-4 g-2 mt-1 mb-1">
+                                                            <div class="col">
+                                                                <button type="button" onclick="press(7)" class="btn btn-secondary w-100 zoomInOut">7</button>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button type="button" onclick="press(8)" class="btn btn-secondary w-100 zoomInOut">8</button>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button type="button" onclick="press(9)" class="btn btn-secondary w-100 zoomInOut">9</button>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button type="button" onclick="press('+')" class="btn btn-secondary w-100 zoomInOut">+</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row row-cols-4 g-2 mt-1 mb-1">
+                                                            <div class="col">
+                                                                <button type="button" onclick="press(4)" class="btn btn-secondary w-100 zoomInOut">4</button>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button type="button" onclick="press(5)" class="btn btn-secondary w-100 zoomInOut">5</button>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button type="button" onclick="press(6)" class="btn btn-secondary w-100 zoomInOut">6</button>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button type="button" onclick="press('*')" class="btn btn-secondary w-100 zoomInOut">*</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row g-2">
+                                                            <div class="col-9">
+                                                                <div class="row g-2 mb-2">
+                                                                <div class="col-4">
+                                                                    <button type="button" onclick="press(1)" class="btn btn-secondary w-100">1</button>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <button type="button" onclick="press(2)" class="btn btn-secondary w-100">2</button>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <button type="button" onclick="press(3)" class="btn btn-secondary w-100">3</button>
+                                                                </div>
+                                                                </div>
+
+                                                                <div class="row g-2">
+                                                                <div class="col-8">
+                                                                    <button type="button" onclick="press(0)" class="btn btn-secondary w-100">0</button>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <button type="button" onclick="press('.')" class="btn btn-secondary w-100">.</button>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 d-flex">
+                                                                <button type="button" onclick="calculate()" class="btn btn-primary w-100 h-100">=</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Prediction-->
+                                        <div class="swiper-slide">
+                                            <div data-aos="fade-down" data-aos-duration="2000" class="card mt-3 zoomInOut">
+                                                <div class="card-header">
+                                                    <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-chart-line me-1"></i>Prediction</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p>Under construction</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Weather-->
+                                        <div class="swiper-slide">
+                                            <div data-aos="fade-down" data-aos-duration="3000" class="card mt-3 zoomInOut">
+                                                <div class="card-header">
+                                                    <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-sun me-1"></i>Weather</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p>Under construction</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Exchange rate-->
+                                        <div class="swiper-slide">
+                                            <div data-aos="fade-down" data-aos-duration="4000" class="card mt-3 zoomInOut">
+                                                <div class="card-header">
+                                                    <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-money-bill-wave me-1"></i>Exchange rate</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p>Under construction</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev zoomInOut"><i class="fa-solid fa-angle-left text-primary"></i></div>
+                                    <div class="swiper-button-next zoomInOut"><i class="fa-solid fa-chevron-right text-primary"></i></div>
+
+                                    <!-- If we need scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                     </section>
                     <section id="utils">
                         <div class="row">
                             <div class="col">
+                                <!--CALCULATOR-->
                                 <div data-aos="fade-down" data-aos-duration="1000" class="card mt-3 zoomInOut">
                                     <div class="card-header">
-                                        <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-heart me-1"></i>Calculator</h5>
+                                        <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-calculator"></i>Calculator</h5>
                                     </div>
-                                    <div class="card-body">
-                                        <input type="text" id="display" class="form-control zoomInOut" placeholder="Enter text">
-                                        <div class="row row-cols-3 g-4 mt-1 mb-1">
+                                    <div class="card-body bg-dark-75">
+                                        <input type="text" id="display" class="form-control text-end zoomInOut" placeholder="456 + 23">
+                                        <div class="row row-cols-4 g-2 mt-1 mb-1">
                                             <div class="col">
-                                                <button type="button" onclick="press(9)" class="btn btn-secondary zoomInOut">9</button>
+                                                <button type="button" onclick="press(C)" class="btn btn-danger w-100 zoomInOut">C</button>
                                             </div>
                                             <div class="col">
-                                                <button type="button" onclick="press(8)" class="btn btn-secondary zoomInOut">8</button>
+                                                <button type="button" onclick="press('/')" class="btn btn-secondary w-100 zoomInOut">/</button>
                                             </div>
                                             <div class="col">
-                                                <button type="button" onclick="press(7)" class="btn btn-secondary zoomInOut">7</button>
-                                            </div>
-                                        </div>
-                                        <div class="row row-cols-3 g-4 mt-1 mb-1">
-                                            <div class="col">
-                                                <button type="button" onclick="press(6)" class="btn btn-secondary zoomInOut">6</button>
+                                                <button type="button" onclick="press('*')" class="btn btn-secondary w-100 zoomInOut">*</button>
                                             </div>
                                             <div class="col">
-                                                <button type="button" onclick="press(5)" class="btn btn-secondary zoomInOut">5</button>
-                                            </div>
-                                            <div class="col">
-                                                <button type="button" onclick="press(4)" class="btn btn-secondary zoomInOut">4</button>
+                                                <button type="button" onclick="press('-')" class="btn btn-secondary w-100 zoomInOut">-</button>
                                             </div>
                                         </div>
-                                        <div class="row row-cols-3 g-4 mt-1 mb-1">
+                                        <div class="row row-cols-4 g-2 mt-1 mb-1">
                                             <div class="col">
-                                                <button type="button" onclick="press(3)" class="btn btn-secondary zoomInOut">3</button>
+                                                <button type="button" onclick="press(7)" class="btn btn-secondary w-100 zoomInOut">7</button>
                                             </div>
                                             <div class="col">
-                                                <button type="button" onclick="press(2)" class="btn btn-secondary zoomInOut">2</button>
+                                                <button type="button" onclick="press(8)" class="btn btn-secondary w-100 zoomInOut">8</button>
                                             </div>
                                             <div class="col">
-                                                <button type="button" onclick="press(1)" class="btn btn-secondary zoomInOut">1</button>
+                                                <button type="button" onclick="press(9)" class="btn btn-secondary w-100 zoomInOut">9</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" onclick="press('+')" class="btn btn-secondary w-100 zoomInOut">+</button>
                                             </div>
                                         </div>
-                                        <div class="row row-cols-4 g-4 mt-1 mb-1">
+                                        <div class="row row-cols-4 g-2 mt-1 mb-1">
                                             <div class="col">
-                                                <button type="button" onclick="press(0)" class="btn btn-secondary zoomInOut">0</button>
+                                                <button type="button" onclick="press(4)" class="btn btn-secondary w-100 zoomInOut">4</button>
                                             </div>
                                             <div class="col">
-                                                <button type="button" onclick="press('+')" class="btn btn-secondary zoomInOut">+</button>
+                                                <button type="button" onclick="press(5)" class="btn btn-secondary w-100 zoomInOut">5</button>
                                             </div>
                                             <div class="col">
-                                                <button type="button" onclick="press('-')" class="btn btn-secondary zoomInOut">-</button>
+                                                <button type="button" onclick="press(6)" class="btn btn-secondary w-100 zoomInOut">6</button>
                                             </div>
                                             <div class="col">
-                                                <button type="button" onclick="calculate()" class="btn btn-secondary zoomInOut">=</button>
+                                                <button type="button" onclick="press('*')" class="btn btn-secondary w-100 zoomInOut">*</button>
+                                            </div>
+                                        </div>
+                                        <div class="row g-2">
+                                            <div class="col-9">
+                                                <div class="row g-2 mb-2">
+                                                <div class="col-4">
+                                                    <button type="button" class="btn btn-secondary w-100">1</button>
+                                                </div>
+                                                <div class="col-4">
+                                                    <button type="button" class="btn btn-secondary w-100">2</button>
+                                                </div>
+                                                <div class="col-4">
+                                                    <button type="button" class="btn btn-secondary w-100">3</button>
+                                                </div>
+                                                </div>
+
+                                                <div class="row g-2">
+                                                <div class="col-8">
+                                                    <button type="button" class="btn btn-secondary w-100">0</button>
+                                                </div>
+                                                <div class="col-4">
+                                                    <button type="button" class="btn btn-secondary w-100">.</button>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 d-flex">
+                                                <button type="button" class="btn btn-primary w-100 h-100">=</button>
                                             </div>
                                         </div>
                                     </div>
