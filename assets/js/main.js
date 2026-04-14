@@ -24,10 +24,10 @@ themeToggle.addEventListener("change", () => {
     root.setAttribute("data-bs-theme", mode)
 });
 
-//
+//калькулятор
 let expression = "";
 
-//
+//не повзволяем пользователю вводить два оператора подряд
 function press(num) {
     // список операторов
     let operators = ["+", "-", "*", "/"];
@@ -40,7 +40,6 @@ function press(num) {
             return; // ничего не делаем 
         }
     }
-
     // если всё ок — добавляем
     expression += num;
     document.getElementById("display").value = expression;
@@ -48,9 +47,9 @@ function press(num) {
 
 // функция для сложения и вычитания
 function calculate() {
-    //
+    //выражение вычисляем и преобразуем в строку
     expression = eval(expression).toString();
-    //
+    //выводим результат на дисплей
     document.getElementById("display").value = expression;
 }
 
