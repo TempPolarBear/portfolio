@@ -23,37 +23,3 @@ themeToggle.addEventListener("change", () => {
     // меняем атрибут темы на режим темы для тега html (root)
     root.setAttribute("data-bs-theme", mode)
 });
-
-//калькулятор
-let expression = "";
-
-//не повзволяем пользователю вводить два оператора подряд
-function press(num) {
-    // список операторов
-    let operators = ["+", "-", "*", "/"];
-    // берём последний символ
-    let lastChar = expression.slice(-1);
-    // если нажали оператор
-    if (operators.includes(num)) {
-        // и последний символ тоже оператор
-        if (operators.includes(lastChar)) {
-            return; // ничего не делаем 
-        }
-    }
-    // если всё ок — добавляем
-    expression += num;
-    document.getElementById("display").value = expression;
-}
-
-// функция для сложения и вычитания
-function calculate() {
-    //выражение вычисляем и преобразуем в строку
-    expression = eval(expression).toString();
-    //выводим результат на дисплей
-    document.getElementById("display").value = expression;
-}
-
-// функция для очистки дисплея
-function clearDisplay() {
-
-}
