@@ -1,71 +1,80 @@
-// создаём переменную, в которой будет храниться весь пример (строка)
-let expression = "";
+(() => {
+  const display = document.getElementById("calculator-display");
+  const buttons = document.querySelectorAll("[data-calculator-value], [data-calculator-action]");
 
-// функция вызывается при нажатии любой кнопки (цифры или оператора)
-function press(num) {
-    try {
+  if (!display || !buttons.length) return;
 
-        // список всех операторов
-        let operators = ["+", "-", "*", "/"];
+  let expression = "";
+  const operators = ["+", "-", "*", "/"];
 
-        // берём последний символ из текущего выражения
-        let lastChar = expression.slice(-1);
+  const updateDisplay = (value = expression) => {
+    display.value = value || "";
+  };
 
-        // проверяем: если нажали оператор (+, -, *, /)
-        if (operators.includes(num)) {
+  const calculateExpression = (value) => {
+    const tokens = value.match(/\d+(?:\.\d+)?|[+\-*/]/g);
 
-            // и если последний символ тоже оператор
-            if (operators.includes(lastChar)) {
-
-                // то ничего не делаем (запрещаем ввод типа ++ или */)
-                return;
-            }
-        }
-
-        // если всё ок — добавляем символ в выражение
-        expression += num;
-
-        // обновляем поле ввода (display), показываем текущее выражение
-        document.getElementById("display").value = expression;
-    } 
-    catch (error) {
-
-        // если произошла ошибка — выводим её в поле ввода
-        document.getElementById("display").value = error;
+    if (!tokens || tokens.join("") !== value || operators.includes(tokens.at(-1))) {
+      throw new Error("Invalid expression");
     }
-}
 
-// функция вызывается при нажатии "="
-function calculate() {
-    try {
+    const reduced = [Number(tokens[0])];
 
-        // считаем результат выражения (например "2+3" → 5)
-        // eval превращает строку в вычисление
-        expression = eval(expression).toString();
+    for (let index = 1; index < tokens.length; index += 2) {
+      const operator = tokens[index];
+      const number = Number(tokens[index + 1]);
 
-        // выводим результат на экран
-        document.getElementById("display").value = expression;
+      if (operator === "*" || operator === "/") {
+        const previous = reduced.pop();
+        if (operator === "/" && number === 0) throw new Error("Cannot divide by zero");
+        reduced.push(operator === "*" ? previous * number : previous / number);
+      } else {
+        reduced.push(operator, number);
+      }
     }
-    catch (error) {
 
-        // если ошибка (например "2+") — показываем ошибку
-        document.getElementById("display").value = error;
+    let result = reduced[0];
+    for (let index = 1; index < reduced.length; index += 2) {
+      result = reduced[index] === "+" ? result + reduced[index + 1] : result - reduced[index + 1];
     }
-}
 
-// функция для кнопки "C" (очистка)
-function clearDisplay() {
-    try {
+    if (!Number.isFinite(result)) throw new Error("Invalid result");
+    return String(Number(result.toFixed(10)));
+  };
 
-        // очищаем выражение (сбрасываем в пустую строку)
+  const addValue = (value) => {
+    const lastCharacter = expression.at(-1);
+
+    if (operators.includes(value)) {
+      if (!expression) return;
+      expression = operators.includes(lastCharacter) ? `${expression.slice(0, -1)}${value}` : `${expression}${value}`;
+    } else if (value === ".") {
+      const currentNumber = expression.split(/[+\-*/]/).at(-1);
+      if (currentNumber.includes(".")) return;
+      expression += currentNumber ? "." : "0.";
+    } else {
+      expression += value;
+    }
+
+    updateDisplay();
+  };
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (button.dataset.calculatorAction === "clear") {
         expression = "";
-
-        // очищаем поле ввода
-        document.getElementById("display").value = "";
-    }
-    catch (error) {
-
-        // если вдруг ошибка — выводим её
-        document.getElementById("display").value = error;
-    }
-}
+        updateDisplay();
+      } else if (button.dataset.calculatorAction === "equals") {
+        try {
+          expression = calculateExpression(expression);
+          updateDisplay();
+        } catch (error) {
+          expression = "";
+          updateDisplay(error.message);
+        }
+      } else {
+        addValue(button.dataset.calculatorValue);
+      }
+    });
+  });
+})();

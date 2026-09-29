@@ -7,9 +7,6 @@ const root = document.documentElement
 // создание события на изменение состояния нашего переключателя
 themeToggle.addEventListener("change", () => {
 
-    // выводим сообщение про успешную смену темы
-    alert("Your theme was successfully changed")
-
     // проверка находится ли переключатель темы в отмеченом состоянии
     if (themeToggle.checked == true) {
         // то следующая тема будет черная
