@@ -62,6 +62,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-info me-1"></i>Portfolio</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
                             <li><a class="dropdown-item zoomInOut" href="#experience"><i class="fa-solid fa-code-fork me-1"></i>Experience</a></li>
+                            <li><a class="dropdown-item zoomInOut" href="#learning-journey"><i class="fa-solid fa-stopwatch me-1"></i>Learning Journey</a></li>
                             <li><a class="dropdown-item zoomInOut" href="#projects"><i class="fa-solid fa-folder-open me-1"></i>Projects</a></li>
                             <li><a class="dropdown-item zoomInOut" href="#certification"><i class="fa-solid fa-medal me-1"></i>Certification</a></li>
                             <li><a class="dropdown-item zoomInOut" href="#education"><i class="fa-solid fa-graduation-cap me-1"></i>Education</a></li>
@@ -104,6 +105,11 @@
                                 <i class="fa-solid fa-palette me-1 mb-3"></i>Building responsive, user-friendly interfaces<br>
                                 <i class="fa-solid fa-laptop-code me-1 mb-3"></i>Open to junior frontend opportunities
                             </p>
+                            <div class="d-flex flex-wrap gap-2 mt-3" data-cv-path="public/cv/valeriia-kuznetsova-frontend-cv.pdf">
+                                <button type="button" class="btn btn-primary" aria-disabled="true" aria-describedby="cv-status">View CV</button>
+                                <button type="button" class="btn btn-outline-primary" aria-disabled="true" aria-describedby="cv-status">Download CV</button>
+                            </div>
+                            <p id="cv-status" class="small text-body-secondary mt-2 mb-0">CV coming soon.</p>
                         </div>
                     </div>
                 </div>
@@ -114,6 +120,25 @@
         </div>
     </header>
     <main>
+        <section class="container mb-4" aria-labelledby="keywords-heading">
+            <div class="card keywords-card">
+                <div class="h5 card-header"><h2 id="keywords-heading" class="m-0">Keywords</h2></div>
+                <div class="card-body">
+                    <div class="keyword-window">
+                        <div class="keyword-track">
+                            <div class="keyword-set"><span><i class="fa-brands fa-html5" aria-hidden="true"></i>HTML</span><span><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>CSS</span><span><i class="fa-brands fa-js" aria-hidden="true"></i>JavaScript</span><span><i class="fa-brands fa-bootstrap" aria-hidden="true"></i>Bootstrap</span><span><i class="fa-solid fa-code" aria-hidden="true"></i>TypeScript</span><span><i class="fa-brands fa-react" aria-hidden="true"></i>React</span><span><i class="fa-solid fa-code" aria-hidden="true"></i>REST API</span><span><i class="fa-solid fa-network-wired" aria-hidden="true"></i>Axios</span><span><i class="fa-solid fa-database" aria-hidden="true"></i>TanStack Query</span></div>
+                            <div class="keyword-set" aria-hidden="true"><span><i class="fa-brands fa-html5" aria-hidden="true"></i>HTML</span><span><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>CSS</span><span><i class="fa-brands fa-js" aria-hidden="true"></i>JavaScript</span><span><i class="fa-brands fa-bootstrap" aria-hidden="true"></i>Bootstrap</span><span><i class="fa-solid fa-code" aria-hidden="true"></i>TypeScript</span><span><i class="fa-brands fa-react" aria-hidden="true"></i>React</span><span><i class="fa-solid fa-code" aria-hidden="true"></i>REST API</span><span><i class="fa-solid fa-network-wired" aria-hidden="true"></i>Axios</span><span><i class="fa-solid fa-database" aria-hidden="true"></i>TanStack Query</span></div>
+                        </div>
+                    </div>
+                    <div class="keyword-window">
+                        <div class="keyword-track keyword-reverse">
+                            <div class="keyword-set"><span><i class="fa-solid fa-bolt" aria-hidden="true"></i>Vite</span><span><i class="fa-brands fa-git-alt" aria-hidden="true"></i>Git</span><span><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</span><span><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>Responsive Design</span><span><i class="fa-solid fa-universal-access" aria-hidden="true"></i>Accessibility</span><span><i class="fa-solid fa-palette" aria-hidden="true"></i>UI</span><span><i class="fa-solid fa-code" aria-hidden="true"></i>Frontend</span><span><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>Netlify</span><span><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>Vercel</span></div>
+                            <div class="keyword-set" aria-hidden="true"><span><i class="fa-solid fa-bolt" aria-hidden="true"></i>Vite</span><span><i class="fa-brands fa-git-alt" aria-hidden="true"></i>Git</span><span><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</span><span><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>Responsive Design</span><span><i class="fa-solid fa-universal-access" aria-hidden="true"></i>Accessibility</span><span><i class="fa-solid fa-palette" aria-hidden="true"></i>UI</span><span><i class="fa-solid fa-code" aria-hidden="true"></i>Frontend</span><span><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>Netlify</span><span><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>Vercel</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- PERSONAL INFO -->
         <div class="container pb-5">
             <div class="row justify-content-center align-items-start g-4">
@@ -121,7 +146,7 @@
                     <!-- INFO -->
                     <div data-aos="fade-up" data-aos-duration="1000" class="card zoomInOut">
                         <div id="personal_info" class="card-header">
-                            <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-user fw-bold me-1"></i>Personal Info</h5>
+                            <h2 class="h5 m-0 p-0 fw-bold"><i class="fa-solid fa-user fw-bold me-1"></i>Personal Info</h2>
                         </div> 
                         <div class="card-body">
                             <p><i class="fa-solid fa-location-dot fw-bold me-1"></i>Location</p>
@@ -131,7 +156,7 @@
                     <!-- AVAILABILITY -->
                     <div data-aos="fade-up" data-aos-duration="1000" class="card mt-3 zoomInOut">
                         <div id="availability" class="card-header">
-                            <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-map-pin fw-bold me-1"></i>Availability</h5>
+                            <h2 class="h5 m-0 p-0 fw-bold"><i class="fa-solid fa-map-pin fw-bold me-1"></i>Availability</h2>
                         </div> 
                         <div class="card-body">
                             <p><i class="fa-solid fa-earth-europe fw-bold me-1"></i>Open to international opportunities</p>
@@ -142,17 +167,16 @@
                     <!-- CONTACTS -->
                     <div data-aos="fade-up" data-aos-duration="1500" class="card mt-3 zoomInOut">
                         <div id="contacts" class="card-header">
-                            <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-address-book me-1"></i>Contacts</h5>
+                            <h2 class="h5 fw-bold m-0 p-0"><i class="fa-solid fa-address-book me-1"></i>Contacts</h2>
                         </div>
                         <div class="card-body">
-                            <p><i class="fa-regular fa-envelope fw-bold me-1"></i>Email</p>
-                            <p class="zoomInOut"><a target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none" href="mailto:valeriia.kuznetsova@proton.me">valeriia.kuznetsova@proton.me</a></p>
+                            <p class="zoomInOut"><a class="text-primary" href="mailto:valeriia.kuznetsova@proton.me"><i class="fa-regular fa-envelope me-1"></i>Email</a></p>
                         </div>
                     </div>
                     <!-- SOCIAL -->
                     <div data-aos="fade-up" data-aos-duration="2000" class="card mt-3 zoomInOut">
                         <div id="media" class="card-header">
-                            <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-hashtag me-1"></i>Social Media</h5>
+                            <h2 class="h5 m-0 p-0 fw-bold"><i class="fa-solid fa-hashtag me-1"></i>Social Media</h2>
                         </div>
                         <div class="card-body pt-3">
                             <p class="mb-3 mt-0 me-0 ms-0 p-0 zoomInOut"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/valeriia-kuznetsova/" class="text-primary"><i class="fa-brands fa-linkedin me-1"></i>Linkedin</a></p>
@@ -162,13 +186,13 @@
                     <!-- LANGUAGE -->
                     <div data-aos="fade-up" data-aos-duration="2500" class="card zoomInOut mt-3">
                         <div id="languages" class="card-header">
-                            <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-language me-1"></i>Languages</h5>
+                            <h2 class="h5 m-0 p-0 fw-bold"><i class="fa-solid fa-language me-1"></i>Languages</h2>
                         </div>
                         <div class="card-body pt-3">
-                            <p class=""><i class="fa-solid fa-earth-europe me-1"></i>Ukrainian — Native</p>
-                            <p><i class="fa-solid fa-earth-americas me-1"></i>English — A2</p>
-                            <p><i class="fa-solid fa-earth-europe me-1"></i>Czech — A2 (lived in the Czech Republic)</p>
-                            <p class=""><i class="fa-solid fa-earth-europe me-1"></i>Russian — Native</p>
+                            <p class=""><i class="fa-solid fa-earth-europe me-1"></i>Ukrainian - Native</p>
+                            <p><i class="fa-solid fa-earth-americas me-1"></i>English - A2</p>
+                            <p><i class="fa-solid fa-earth-europe me-1"></i>Czech - A2 (lived in the Czech Republic)</p>
+                            <p class=""><i class="fa-solid fa-earth-europe me-1"></i>Russian - Native</p>
                         </div>
                     </div>
                 </div>
@@ -177,7 +201,7 @@
                     <section id="experience">
                         <div data-aos="fade-up" data-aos-duration="1000" class="card zoomInOut">
                             <div class="card-header">
-                                <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-code-fork me-1"></i>Experience</h5>
+                                <h2 class="h5 m-0 p-0 fw-bold"><i class="fa-solid fa-code-fork me-1"></i>Experience</h2>
                             </div>    
                             <div class="card-body">
                                 <div class="row row-cols-1 row-cols-lg-2 g-4">
@@ -200,30 +224,36 @@
                         </div>
                     </section> 
                    <!-- STATS -->
-                    <section id="stats">
+                    <section id="learning-journey">
                         <div data-aos="fade-up" data-aos-duration="1000" class="card zoomInOut mt-3">
                             <div class="card-header">
-                                <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-stopwatch me-1"></i>My Learning Journey</h5>
+                                <h2 class="h5 m-0 p-0 fw-bold"><i class="fa-solid fa-stopwatch me-1"></i>My Learning Journey</h2>
                             </div>
                             <div class="card-body">
                                 <p class="mb-3"><i class="fa-solid fa-calendar-day me-1 text-primary"></i>Today: <span id="current-date" class="fw-bold"></span></p>
                                 <div class="row g-2 text-center mb-3">
-                                    <div class="col-4">
+                                    <div class="col-6 col-sm-3">
                                         <div class="h-100 p-2 p-md-3 border rounded-3 bg-body-tertiary">
-                                            <h3 id="learning-days" class="mb-1 fw-bold text-primary">0</h3>
+                                            <p id="learning-days" class="h3 mb-1 fw-bold text-primary">0</p>
                                             <small class="text-body-secondary fw-semibold">DAYS</small>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-6 col-sm-3">
                                         <div class="h-100 p-2 p-md-3 border rounded-3 bg-body-tertiary">
-                                            <h3 id="learning-hours" class="mb-1 fw-bold text-primary">0</h3>
+                                            <p id="learning-hours" class="h3 mb-1 fw-bold text-primary">0</p>
                                             <small class="text-body-secondary fw-semibold">HOURS</small>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-6 col-sm-3">
                                         <div class="h-100 p-2 p-md-3 border rounded-3 bg-body-tertiary">
-                                            <h3 id="learning-minutes" class="mb-1 fw-bold text-primary">0</h3>
+                                            <p id="learning-minutes" class="h3 mb-1 fw-bold text-primary">0</p>
                                             <small class="text-body-secondary fw-semibold">MINUTES</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <div class="h-100 p-2 p-md-3 border rounded-3 bg-body-tertiary">
+                                            <p id="learning-seconds" class="h3 mb-1 fw-bold text-primary">00</p>
+                                            <small class="text-body-secondary fw-semibold">SECONDS</small>
                                         </div>
                                     </div>
                                 </div>
@@ -235,19 +265,21 @@
                     <section id="projects">
                         <div data-aos="fade-up" data-aos-duration="1500" class="card mt-3 zoomInOut">
                             <div class="card-header ">
-                                <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-folder-open me-1"></i>Projects</h5>
+                                <h2 class="h5 m-0 p-0 fw-bold"><i class="fa-solid fa-folder-open me-1"></i>Projects</h2>
                             </div>
                             <div class="card-body p-4">
-                                <h6 class="text-primary fw-bold mb-3"><i class="fa-solid fa-code me-1"></i>JavaScript Projects</h6>
+                                <h3 class="h6 text-primary fw-bold mb-3"><i class="fa-solid fa-code me-1"></i>JavaScript Projects</h3>
                                 <div class="swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <article class="text-center px-2">
                                                 <h4 class="text-center p-0 m-2">Movie Search with React Query</h4>
+                                                <p><span class="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                                                 <a class="m-2" href="assets/img/projects/movie-search-with-react-query.webp" data-lightbox="roadtrip" data-title="Movie Search with React Query">
                                                     <img class="img-fluid thumb rounded mb-2" width="150" height="150" src="assets/img/projects/movie-search-with-react-query.webp" alt="Movie Search with React Query" loading="lazy" />
                                                 </a>
-                                                <p class="mb-2"><i class="fa-solid fa-code me-1"></i><strong>Technologies:</strong> React, TypeScript, TanStack Query, Axios, React Paginate, Vite</p>
+                                                <p class="mb-2"><strong>Summary:</strong> Search movies with cached queries and pagination.</p>
+                                                <p class="mb-2"><i class="fa-solid fa-code me-1"></i><strong>Technologies:</strong> React • TypeScript • TanStack Query • Axios • React Paginate • Vite</p>
                                                 <p class="mb-1"><strong>Key features:</strong></p>
                                                 <ul class="list-unstyled small mb-3 d-inline-block text-start">
                                                     <li>Search with controlled pagination</li>
@@ -263,10 +295,12 @@
                                         <div class="swiper-slide">
                                             <article class="text-center px-2">
                                                 <h4 class="text-center p-0 m-2">Movie Search</h4>
+                                                <p><span class="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                                                 <a class="m-2" href="assets/img/projects/movie-search.webp" data-lightbox="roadtrip" data-title="Movie Search">
                                                     <img class="img-fluid thumb rounded mb-2" width="150" height="150" src="assets/img/projects/movie-search.webp" alt="Movie Search" loading="lazy" />
                                                 </a>
-                                                <p class="mb-2"><i class="fa-solid fa-code me-1"></i><strong>Technologies:</strong> React, TypeScript, Axios, TMDB API, Vite</p>
+                                                <p class="mb-2"><strong>Summary:</strong> Search for movies using the TMDB API.</p>
+                                                <p class="mb-2"><i class="fa-solid fa-code me-1"></i><strong>Technologies:</strong> React • TypeScript • Axios • TMDB API • Vite</p>
                                                 <p class="mb-1"><strong>Key features:</strong></p>
                                                 <ul class="list-unstyled small mb-3 d-inline-block text-start">
                                                     <li>Movie search through the TMDB API</li>
@@ -282,10 +316,12 @@
                                         <div class="swiper-slide">
                                             <article class="text-center px-2">
                                                 <h4 class="text-center p-0 m-2">Café Feedback</h4>
+                                                <p><span class="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                                                 <a class="m-2" href="assets/img/projects/cafe-feedback.webp" data-lightbox="roadtrip" data-title="Café Feedback">
                                                     <img class="img-fluid thumb rounded mb-2" width="150" height="150" src="assets/img/projects/cafe-feedback.webp" alt="Café Feedback" loading="lazy" />
                                                 </a>
-                                                <p class="mb-2"><i class="fa-solid fa-code me-1"></i><strong>Technologies:</strong> React, TypeScript, Vite, CSS Modules</p>
+                                                <p class="mb-2"><strong>Summary:</strong> Record café feedback and view vote totals.</p>
+                                                <p class="mb-2"><i class="fa-solid fa-code me-1"></i><strong>Technologies:</strong> React • TypeScript • Vite • CSS Modules</p>
                                                 <p class="mb-1"><strong>Key features:</strong></p>
                                                 <ul class="list-unstyled small mb-3 d-inline-block text-start">
                                                     <li>Good, neutral, and bad vote state</li>
@@ -305,7 +341,7 @@
                                     <div class="swiper-scrollbar"></div>
                                 </div>
                                 <div class="mt-4">
-                                    <h6 class="text-primary fw-bold mb-3"><i class="fa-solid fa-gem me-1"></i>Main Project</h6>
+                                    <h3 class="h6 text-primary fw-bold mb-3"><i class="fa-solid fa-gem me-1"></i>Main Project</h3>
                                     <article class="text-center px-2">
                                         <h4 class="p-0 m-2">Elation</h4>
                                         <p class="text-center text-body mb-2">Fantasy RPG Character Creator</p>
@@ -318,7 +354,8 @@
                                             <img class="img-fluid thumb rounded mb-2" width="150" height="150" src="assets/img/projects/elation.webp" alt="Elation Character Creator" loading="lazy" />
                                         </a>
                                         <p class="text-body small mb-3">The project is actively evolving and will continue to be improved and expanded.</p>
-                                        <p class="mb-1"><i class="fa-solid fa-code me-1"></i><strong>Technologies:</strong> JavaScript, Vite, HTML, CSS, Bootstrap</p>
+                                        <p class="mb-2"><strong>Summary:</strong> A personal fantasy RPG character creator with saved characters.</p>
+                                        <p class="mb-1"><i class="fa-solid fa-code me-1"></i><strong>Technologies:</strong> JavaScript • Vite • HTML • CSS • Bootstrap</p>
                                         <p class="mb-1"><strong>Key features:</strong></p>
                                         <ul class="list-unstyled small mb-3 d-inline-block text-start">
                                             <li>Step-by-step character creation</li>
@@ -332,16 +369,18 @@
                                     </article>
                                 </div>
                                 <div class="mt-4">
-                                    <h6 class="text-primary fw-bold mb-3"><i class="fa-solid fa-clock-rotate-left me-1"></i>Earlier Work</h6>
+                                    <h3 class="h6 text-primary fw-bold mb-3"><i class="fa-solid fa-clock-rotate-left me-1"></i>Earlier Work</h3>
                                     <div class="swiper">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="text-center">
                                                     <h4 class="p-0 m-2">NFT for Music</h4>
+                                                    <p><span class="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                                                     <a class="m-2" href="assets/img/projects/nft-platform.webp" data-lightbox="roadtrip" data-title="NFT for Music">
                                                         <img class="img-fluid thumb rounded mb-2" width="150" height="150" src="assets/img/projects/nft-platform.webp" alt="NFT for Music" loading="lazy" />
                                                     </a>
-                                                    <p class="mb-2"><i class="fa-solid fa-code me-1"></i>HTML, CSS, Bootstrap</p>
+                                                    <p class="mb-2"><strong>Summary:</strong> A layout for a music NFT platform concept.</p>
+                                                    <p class="mb-2"><i class="fa-solid fa-code me-1"></i><strong>Technologies:</strong> HTML • CSS • Bootstrap</p>
                                                     <p class="mb-1"><strong>Key features:</strong></p>
                                                     <ul class="list-unstyled small mb-3 d-inline-block text-start">
                                                         <li>Music NFT platform concept</li>
@@ -356,10 +395,12 @@
                                             <div class="swiper-slide">
                                                 <div class="text-center">
                                                     <h4 class="p-0 m-2">Appello</h4>
+                                                    <p><span class="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                                                     <a class="m-2" href="assets/img/projects/appello-website.webp" data-lightbox="roadtrip" data-title="Appello">
                                                         <img class="img-fluid thumb rounded mb-2" width="150" height="150" src="assets/img/projects/appello-website.webp" alt="Appello" loading="lazy"/>
                                                     </a>
-                                                    <p class="mb-2"><i class="fa-solid fa-code me-1"></i>HTML, CSS, Bootstrap</p>
+                                                    <p class="mb-2"><strong>Summary:</strong> A company website layout with services, portfolio and team sections.</p>
+                                                    <p class="mb-2"><i class="fa-solid fa-code me-1"></i><strong>Technologies:</strong> HTML • CSS • Bootstrap</p>
                                                     <p class="mb-1"><strong>Key features:</strong></p>
                                                     <ul class="list-unstyled small mb-3 d-inline-block text-start">
                                                         <li>Company services website</li>
@@ -374,10 +415,12 @@
                                             <div class="swiper-slide">
                                                 <div class="text-center">
                                                     <h4 class="p-0 m-2">Barbershop</h4>
+                                                    <p><span class="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                                                     <a class="m-2" href="assets/img/projects/barbershop.webp" data-lightbox="roadtrip" data-title="Barbershop">
                                                         <img class="img-fluid thumb rounded mb-2" width="150" height="150" src="assets/img/projects/barbershop.webp" alt="Barbershop" loading="lazy"/>
                                                     </a>
-                                                    <p class="mb-2"><i class="fa-solid fa-code me-1"></i>HTML, CSS, Bootstrap</p>
+                                                    <p class="mb-2"><strong>Summary:</strong> A barbershop layout with services, prices and a gallery.</p>
+                                                    <p class="mb-2"><i class="fa-solid fa-code me-1"></i><strong>Technologies:</strong> HTML • CSS • Bootstrap</p>
                                                     <p class="mb-1"><strong>Key features:</strong></p>
                                                     <ul class="list-unstyled small mb-3 d-inline-block text-start">
                                                         <li>Services and pricing sections</li>
@@ -392,10 +435,12 @@
                                             <div class="swiper-slide">
                                                 <div class="text-center">
                                                     <h4 class="p-0 m-2">Covid</h4>
+                                                    <p><span class="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                                                     <a class="m-2" href="assets/img/projects/covid-dashboard.webp" data-lightbox="roadtrip" data-title="Covid">
                                                         <img class="img-fluid thumb rounded mb-2" width="150" height="150" src="assets/img/projects/covid-dashboard.webp" alt="Covid" loading="lazy"/>
                                                     </a>
-                                                    <p class="mb-2"><i class="fa-solid fa-code me-1"></i>HTML, CSS</p>
+                                                    <p class="mb-2"><strong>Summary:</strong> An informational COVID-19 resource layout.</p>
+                                                    <p class="mb-2"><i class="fa-solid fa-code me-1"></i><strong>Technologies:</strong> HTML • CSS</p>
                                                     <p class="mb-1"><strong>Key features:</strong></p>
                                                     <ul class="list-unstyled small mb-3 d-inline-block text-start">
                                                         <li>COVID-19 information concept</li>
@@ -421,7 +466,7 @@
                      <section id="certification">
                         <div data-aos="fade-up" data-aos-duration="2000" class="card mt-3 zoomInOut">
                             <div class="card-header">
-                                <h5 class="m-0 p-0"><i class="fa-solid fa-medal me-1"></i>Certification</h5>
+                                <h2 class="h5 m-0 p-0"><i class="fa-solid fa-medal me-1"></i>Certification</h2>
                             </div>
                             <div class="card-body">
                                 <!-- Slider main container -->
@@ -431,7 +476,8 @@
                                         <!-- Slides -->
                                         <div class="swiper-slide">
                                             <div class="text-center">
-                                               <h4 class="p-0 m-2">Czech Certificate</h4>
+                                               <h3 class="h4 p-0 m-2">Czech Certificate</h3>
+                                                <p class="small mb-2">Certificate in Czech language.</p>
                                                 <a class="m-2" href="assets/img/certificate/Czech_certificate.webp" data-lightbox="roadtrip" data-title="Czech certificate">
                                                     <img width="200" height="200" class="img-fluid thumb rounded" src="assets/img/certificate/Czech_certificate.webp" alt="Czech certificate" loading="lazy"/>
                                                 </a>
@@ -439,7 +485,8 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="text-center">
-                                                <h4 class="p-0 m-2">English Certificate</h4>
+                                                <h3 class="h4 p-0 m-2">English Certificate</h3>
+                                                <p class="small mb-2">Certificate in English language.</p>
                                                 <a class="m-2" href="assets/img/certificate/English_certificate.webp" data-lightbox="roadtrip" data-title="English certificate">
                                                     <img width="200" height="200" class="img-fluid thumb rounded" src="assets/img/certificate/English_certificate.webp" alt="English certificate" loading="lazy"/>
                                                 </a>
@@ -447,7 +494,8 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="col text-center">
-                                                <h4 class="p-0 m-2">Diploma Bachelor's</h4>
+                                                <h3 class="h4 p-0 m-2">Diploma Bachelor's</h3>
+                                                <p class="small mb-2">Bachelor's degree diploma.</p>
                                                 <a class="m-2" href="assets/img/certificate/Diploma_bachelor's.webp" data-lightbox="roadtrip" data-title="Diploma Bachelor's">
                                                     <img width="200" height="200" class="img-fluid thumb rounded" src="assets/img/certificate/Diploma_bachelor's.webp" alt="Diploma Bachelor's" loading="lazy"/>
                                                 </a>
@@ -455,7 +503,8 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="col text-center">
-                                                <h4 class="p-0 m-2">IT Skills Certificate</h4>
+                                                <h3 class="h4 p-0 m-2">IT Skills Certificate</h3>
+                                                <p class="small mb-2">Certificate of an IT skills test.</p>
                                                 <a class="m-2" href="assets/img/certificate/IT_skills_test.webp" data-lightbox="roadtrip" data-title="IT skills test">
                                                     <img width="200" height="200" class="img-fluid thumb rounded" src="assets/img/certificate/IT_skills_test.webp" alt="IT skills test" loading="lazy"/>
                                                 </a>
@@ -463,7 +512,8 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="col text-center">
-                                                <h4 class="p-0 m-2">IT English Certificate</h4>
+                                                <h3 class="h4 p-0 m-2">IT English Certificate</h3>
+                                                <p class="small mb-2">Certificate in IT English.</p>
                                                 <a class="m-2" href="assets/img/certificate/IT_English.webp" data-lightbox="roadtrip" data-title="IT English">
                                                     <img width="200" height="200" class="img-fluid thumb rounded" src="assets/img/certificate/IT_English.webp" alt="IT English" loading="lazy"/>
                                                 </a>
@@ -487,14 +537,22 @@
                     <section id="education">
                         <div data-aos="fade-up" data-aos-duration="2500" class="card mt-3 zoomInOut">
                             <div class="card-header ">
-                                <h5 class="m-0 p-0 fw-bold"><i class="fa-solid fa-graduation-cap me-1"></i>Education</h5>
+                                <h2 class="h5 m-0 p-0 fw-bold"><i class="fa-solid fa-graduation-cap me-1"></i>Education</h2>
                             </div>
                             <div class="card-body">
-                                    <p><i class="fa-solid fa-building-columns me-1"></i>University: Odesa National University of Technology</p>
-                                    <p><i class="fa-solid fa-graduation-cap me-1"></i>Degree: Bachelor's degree</p>
-                                    <p><i class="fa-solid fa-location-dot me-1"></i>Location: Odesa, Ukraine</p>
-                                    <p><i class="fa-solid fa-calendar-days me-1"></i>Study Period: 2020–2022</p>
-                                    <p><i class="fa-solid fa-circle-info me-1"></i>Description: Developed analytical thinking, project work, and problem-solving skills.</p>
+                                    <p><i class="fa-solid fa-building-columns me-1"></i>GoIT: Frontend Developer Course</p>
+                                    <p><i class="fa-solid fa-graduation-cap me-1"></i>Program: Frontend Developer</p>
+                                    <p><i class="fa-solid fa-location-dot me-1"></i>Format: Online</p>
+                                    <p><i class="fa-solid fa-calendar-days me-1"></i>Study Period: Feb 2026 - Present</p>
+                                    <p><i class="fa-solid fa-book-open me-1"></i>Status: Ongoing</p>
+                                    <p class="mb-0"><i class="fa-solid fa-circle-info me-1"></i>Description: Practical frontend development training focused on modern web development, responsive interfaces and project-based learning.</p>
+                                    <div class="border-top pt-3 mt-3">
+                                        <p><i class="fa-solid fa-building-columns me-1"></i>University: Odesa National University of Technology</p>
+                                        <p><i class="fa-solid fa-graduation-cap me-1"></i>Degree: Bachelor's degree</p>
+                                        <p><i class="fa-solid fa-location-dot me-1"></i>Location: Odesa, Ukraine</p>
+                                        <p><i class="fa-solid fa-calendar-days me-1"></i>Study Period: 2020 - 2022</p>
+                                        <p class="mb-0"><i class="fa-solid fa-circle-info me-1"></i>Description: Developed analytical thinking, project work, and problem-solving skills.</p>
+                                    </div>
                             </div>
                         </div>
                     </section>
@@ -503,12 +561,12 @@
                         <!-- HARD -->
                         <div data-aos="fade-up" data-aos-duration="3000" class="card mt-3 zoomInOut">
                             <div class="card-header">
-                                <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-laptop-code me-1"></i>Technical Skills</h5>
+                                <h2 class="h5 fw-bold m-0 p-0"><i class="fa-solid fa-laptop-code me-1"></i>Technical Skills</h2>
                             </div>
                             <div class="card-body">
                                 <div class="row row-cols-1 row-cols-md-2 g-4">
                                     <div class="col skill-group">
-                                        <h6 class="text-primary fw-bold mb-2"><i class="fa-solid fa-code me-1"></i>Core Frontend</h6>
+                                        <h3 class="h6 text-primary fw-bold mb-2"><i class="fa-solid fa-code me-1"></i>Core Frontend</h3>
                                         <ul class="skill-tags">
                                             <li><span class="skill-tag">HTML</span></li>
                                             <li><span class="skill-tag">CSS</span></li>
@@ -516,7 +574,7 @@
                                         </ul>
                                     </div>
                                     <div class="col skill-group">
-                                        <h6 class="text-primary fw-bold mb-2"><i class="fa-solid fa-book me-1"></i>Currently Learning</h6>
+                                        <h3 class="h6 text-primary fw-bold mb-2"><i class="fa-solid fa-book me-1"></i>Currently Learning</h3>
                                         <ul class="skill-tags">
                                             <li><span class="skill-tag">TypeScript</span></li>
                                             <li><span class="skill-tag">React</span></li>
@@ -524,7 +582,7 @@
                                         </ul>
                                     </div>
                                     <div class="col skill-group">
-                                        <h6 class="text-primary fw-bold mb-2"><i class="fa-solid fa-cloud me-1"></i>APIs &amp; Data</h6>
+                                        <h3 class="h6 text-primary fw-bold mb-2"><i class="fa-solid fa-cloud me-1"></i>APIs &amp; Data</h3>
                                         <ul class="skill-tags">
                                             <li><span class="skill-tag">REST APIs</span></li>
                                             <li><span class="skill-tag">Axios</span></li>
@@ -532,7 +590,7 @@
                                         </ul>
                                     </div>
                                     <div class="col skill-group">
-                                        <h6 class="text-primary fw-bold mb-2"><i class="fa-solid fa-screwdriver-wrench me-1"></i>Tools</h6>
+                                        <h3 class="h6 text-primary fw-bold mb-2"><i class="fa-solid fa-screwdriver-wrench me-1"></i>Tools</h3>
                                         <ul class="skill-tags">
                                             <li><span class="skill-tag">Git &amp; GitHub</span></li>
                                             <li><span class="skill-tag">Vite</span></li>
@@ -541,21 +599,21 @@
                                         </ul>
                                     </div>
                                     <div class="col skill-group">
-                                        <h6 class="text-primary fw-bold mb-2"><i class="fa-solid fa-cloud-arrow-up me-1"></i>Deployment &amp; Hosting</h6>
+                                        <h3 class="h6 text-primary fw-bold mb-2"><i class="fa-solid fa-cloud-arrow-up me-1"></i>Deployment &amp; Hosting</h3>
                                         <ul class="skill-tags">
                                             <li><span class="skill-tag">Vercel</span></li>
                                             <li><span class="skill-tag">Netlify</span></li>
                                         </ul>
                                     </div>
                                     <div class="col skill-group">
-                                        <h6 class="text-primary fw-bold mb-2"><i class="fa-solid fa-robot me-1"></i>AI-assisted development</h6>
+                                        <h3 class="h6 text-primary fw-bold mb-2"><i class="fa-solid fa-robot me-1"></i>AI-assisted development</h3>
                                         <ul class="skill-tags">
                                             <li><span class="skill-tag">ChatGPT</span></li>
                                             <li><span class="skill-tag">Codex</span></li>
                                         </ul>
                                     </div>
                                     <div class="col skill-group">
-                                        <h6 class="text-primary fw-bold mb-2"><i class="fa-solid fa-toolbox me-1"></i>Additional Tools</h6>
+                                        <h3 class="h6 text-primary fw-bold mb-2"><i class="fa-solid fa-toolbox me-1"></i>Additional Tools</h3>
                                         <ul class="skill-tags">
                                             <li><span class="skill-tag">Photoshop</span></li>
                                             <li><span class="skill-tag">Figma</span></li>
@@ -571,12 +629,12 @@
                     <section id="soft_skills">
                         <div data-aos="fade-up" data-aos-duration="3000" class="card mt-3 zoomInOut">
                             <div class="card-header">
-                                <h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-heart me-1"></i>Soft Skills</h5>
+                                <h2 class="h5 fw-bold m-0 p-0"><i class="fa-solid fa-heart me-1"></i>Soft Skills</h2>
                             </div>
                             <div class="card-body">
                                 <div class="row row-cols-1 row-cols-md-3 g-4">
                                     <div class="col skill-group">
-                                        <h6 class="text-primary fw-bold mb-2"><i class="fa-solid fa-book me-1"></i>Learning &amp; Growth</h6>
+                                        <h3 class="h6 text-primary fw-bold mb-2"><i class="fa-solid fa-book me-1"></i>Learning &amp; Growth</h3>
                                         <ul class="skill-tags">
                                             <li><span class="skill-tag">Willingness to learn</span></li>
                                             <li><span class="skill-tag">Flexibility</span></li>
@@ -584,7 +642,7 @@
                                         </ul>
                                     </div>
                                     <div class="col skill-group">
-                                        <h6 class="text-primary fw-bold mb-2"><i class="fa-solid fa-people-group me-1"></i>Collaboration</h6>
+                                        <h3 class="h6 text-primary fw-bold mb-2"><i class="fa-solid fa-people-group me-1"></i>Collaboration</h3>
                                         <ul class="skill-tags">
                                             <li><span class="skill-tag">Teamwork</span></li>
                                             <li><span class="skill-tag">Empathy</span></li>
@@ -592,7 +650,7 @@
                                         </ul>
                                     </div>
                                     <div class="col skill-group">
-                                        <h6 class="text-primary fw-bold mb-2"><i class="fa-solid fa-briefcase me-1"></i>Work Habits</h6>
+                                        <h3 class="h6 text-primary fw-bold mb-2"><i class="fa-solid fa-briefcase me-1"></i>Work Habits</h3>
                                         <ul class="skill-tags">
                                             <li><span class="skill-tag">Time management</span></li>
                                             <li><span class="skill-tag">Attention to detail</span></li>
@@ -607,7 +665,7 @@
                     <section id="utils">
                         <div data-aos="fade-up" data-aos-duration="2000" class="card mt-3 zoomInOut">
                             <div class="card-header">
-                                <h5 class="m-0 p-0"><i class="fa-solid fa-sliders me-1"></i>JavaScript Mini Apps</h5>
+                                <h2 class="h5 m-0 p-0"><i class="fa-solid fa-sliders me-1"></i>JavaScript Mini Apps</h2>
                             </div>
                             <div class="card-body">
                                 <div class="swiper">
@@ -615,7 +673,7 @@
                                         <div class="swiper-slide">
                                             <div class="d-flex justify-content-center px-2">
                                                 <article class="card utility-card">
-                                                    <div class="card-header"><h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-calculator me-1"></i>Calculator</h5></div>
+                                                    <div class="h5 card-header"><h3 class="fw-bold m-0 p-0"><i class="fa-solid fa-calculator me-1"></i>Calculator</h3></div>
                                                     <div class="card-body">
                                                         <label class="visually-hidden" for="calculator-display">Calculator display</label>
                                                         <input type="text" id="calculator-display" class="form-control text-end mb-3" readonly aria-live="polite" placeholder="0">
@@ -645,9 +703,9 @@
                                         <div class="swiper-slide">
                                             <div class="d-flex justify-content-center px-2">
                                                 <article class="card utility-card">
-                                                    <div class="card-header"><h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-dice me-1"></i>Randomizer</h5></div>
+                                                    <div class="h5 card-header"><h3 class="fw-bold m-0 p-0"><i class="fa-solid fa-dice me-1"></i>Randomizer</h3></div>
                                                     <div class="card-body">
-                                                        <div class="btn-group w-100 mb-3" role="group" aria-label="Randomizer mode">
+                                                        <div class="d-flex gap-2 w-100 mb-3 random-modes" role="group" aria-label="Randomizer mode">
                                                             <button type="button" class="btn btn-primary" data-random-mode="number" aria-pressed="true">Number</button>
                                                             <button type="button" class="btn btn-outline-primary" data-random-mode="words" aria-pressed="false">Words</button>
                                                         </div>
@@ -670,7 +728,7 @@
                                         <div class="swiper-slide">
                                             <div class="d-flex justify-content-center px-2">
                                                 <article class="card utility-card">
-                                                    <div class="card-header"><h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-clock me-1"></i>Date &amp; Time</h5></div>
+                                                    <div class="h5 card-header"><h3 class="fw-bold m-0 p-0"><i class="fa-solid fa-clock me-1"></i>Date &amp; Time</h3></div>
                                                     <div class="card-body">
                                                         <label class="form-label" for="date-city">Selected city</label>
                                                         <select id="date-city" class="form-select mb-3">
@@ -693,11 +751,11 @@
                                         <div class="swiper-slide">
                                             <div class="d-flex justify-content-center px-2">
                                                 <article class="card utility-card">
-                                                    <div class="card-header"><h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-sun me-1"></i>Weather</h5></div>
+                                                    <div class="h5 card-header"><h3 class="fw-bold m-0 p-0"><i class="fa-solid fa-sun me-1"></i>Weather</h3></div>
                                                     <div class="card-body">
                                                         <form id="weather-form" novalidate>
                                                             <label class="form-label" for="weather-city">City</label>
-                                                            <div class="input-group mb-3"><input id="weather-city" class="form-control" type="search" placeholder="Enter a city" required><button class="btn btn-primary" type="submit">Search</button></div>
+                                                            <div class="weather-controls mb-3"><input id="weather-city" class="form-control" type="search" placeholder="Enter a city" required><button class="btn btn-primary" type="submit">Search</button></div>
                                                         </form>
                                                         <p id="weather-status" class="utility-result mb-2" role="status" aria-live="polite"></p>
                                                         <div id="weather-details" class="utility-details" hidden>
@@ -711,7 +769,7 @@
                                         <div class="swiper-slide">
                                             <div class="d-flex justify-content-center px-2">
                                                 <article class="card utility-card">
-                                                    <div class="card-header"><h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-money-bill-wave me-1"></i>Currency Converter</h5></div>
+                                                    <div class="h5 card-header"><h3 class="fw-bold m-0 p-0"><i class="fa-solid fa-money-bill-wave me-1"></i>Currency Converter</h3></div>
                                                     <div class="card-body">
                                                         <form id="currency-form" novalidate>
                                                             <label class="form-label" for="currency-amount">Amount</label>
@@ -732,7 +790,7 @@
                                         <div class="swiper-slide">
                                             <div class="d-flex justify-content-center px-2">
                                                 <article class="card utility-card">
-                                                    <div class="card-header"><h5 class="fw-bold m-0 p-0"><i class="fa-solid fa-chart-line me-1"></i>Prediction</h5></div>
+                                                    <div class="h5 card-header"><h3 class="fw-bold m-0 p-0"><i class="fa-solid fa-chart-line me-1"></i>Prediction</h3></div>
                                                     <div class="card-body d-flex flex-column">
                                                         <div class="prediction-box my-auto"><p id="prediction-result" class="utility-result text-center mb-0" role="status" aria-live="polite">Choose a prediction when you are ready.</p></div>
                                                         <button id="prediction-button" class="btn btn-primary w-100 mt-3" type="button">Get Prediction</button>
@@ -762,9 +820,9 @@
                 <!-- Logo -->
                 <div class="text-center mb-4">
                     <div class="d-inline-block rounded-4 px-5 py-3 shadow-sm zoomInOut">
-                        <h4 class="m-0 fw-bold text-primary">
+                        <p class="h4 m-0 fw-bold text-primary">
                             <a class="text-decoration-none text-primary" href="#">&lt;Valeriia /&gt;</a>
-                        </h4>
+                        </p>
                     </div>
                     <p class="text-secondary small mt-3 mb-0">Junior Frontend Developer • Interested in UI/UX</p>
                     <p class="small text-secondary mt-2">Open to opportunities • Remote / relocation</p>
@@ -773,7 +831,7 @@
                     <!-- General Info -->
                     <div class="col-auto text-center">
                         <div style="min-width: 220px;">
-                            <h3 class="fw-bold mb-4">General Info</h3>
+                            <h2 class="h3 fw-bold mb-4">General Info</h2>
                             <ul class="list-unstyled mb-0">
                                 <li class="mb-2 zoomInOut">
                                     <a href="#personal_info" class="text-decoration-none text-white-50">
@@ -806,11 +864,16 @@
                     <!-- Portfolio -->
                     <div class="col-auto text-center">
                         <div style="min-width: 220px;">
-                            <h3 class="fw-bold mb-4">Portfolio</h3>
+                            <h2 class="h3 fw-bold mb-4">Portfolio</h2>
                             <ul class="list-unstyled mb-0">
                                 <li class="mb-2 zoomInOut">
                                     <a href="#experience" class="text-decoration-none text-white-50">
                                         <i class="fa-solid fa-code-fork me-2"></i>Experience
+                                    </a>
+                                </li>
+                                <li class="mb-2 zoomInOut">
+                                    <a href="#learning-journey" class="text-decoration-none text-white-50">
+                                        <i class="fa-solid fa-stopwatch me-1"></i>Learning Journey
                                     </a>
                                 </li>
                                 <li class="mb-2 zoomInOut">
@@ -839,7 +902,7 @@
                     <!-- Skills -->
                     <div class="col-auto text-center">
                         <div style="min-width: 220px;">
-                            <h3 class="fw-bold mb-4">Skills</h3>
+                            <h2 class="h3 fw-bold mb-4">Skills</h2>
                             <ul class="list-unstyled mb-0">
                                 <li class="mb-2 zoomInOut">
                                     <a href="#hard_skills" class="text-decoration-none text-white-50">

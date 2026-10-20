@@ -26,11 +26,12 @@
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const amount = Number(amountInput.value);
+    const amountText = amountInput.value.trim();
+    const amount = Number(amountText);
     const from = fromSelect.value;
     const to = toSelect.value;
 
-    if (!Number.isFinite(amount) || amount < 0) {
+    if (!amountText || !Number.isFinite(amount) || amount < 0) {
       details.hidden = true;
       setStatus("Enter a valid amount.", true);
       return;

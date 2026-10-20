@@ -12,9 +12,10 @@
   };
 
   const calculateExpression = (value) => {
-    const tokens = value.match(/\d+(?:\.\d+)?|[+\-*/]/g);
+    const tokens = value.match(/(?:^|(?<=[+*/-]))-?\d+(?:\.\d+)?|\d+(?:\.\d+)?|[+*/-]/g);
 
-    if (!tokens || tokens.join("") !== value || operators.includes(tokens.at(-1))) {
+    if (!tokens || tokens.join("") !== value || tokens.length % 2 === 0 ||
+        tokens.some((token, index) => index % 2 === 1 ? !operators.includes(token) : !Number.isFinite(Number(token)))) {
       throw new Error("Invalid expression");
     }
 
@@ -46,7 +47,19 @@
     const lastCharacter = expression.at(-1);
 
     if (operators.includes(value)) {
-      if (!expression) return;
+      if (!expression) {
+        if (value === "-") {
+          expression = "-";
+          updateDisplay();
+        }
+        return;
+      }
+      if (value === "-" && ["+", "*", "/"].includes(lastCharacter)) {
+        expression += value;
+        updateDisplay();
+        return;
+      }
+      if (expression === "-") return;
       expression = operators.includes(lastCharacter) ? `${expression.slice(0, -1)}${value}` : `${expression}${value}`;
     } else if (value === ".") {
       const currentNumber = expression.split(/[+\-*/]/).at(-1);

@@ -5,6 +5,7 @@ const dateElement = document.querySelector("#current-date");
 const daysElement = document.querySelector("#learning-days");
 const hoursElement = document.querySelector("#learning-hours");
 const minutesElement = document.querySelector("#learning-minutes");
+const secondsElement = document.querySelector("#learning-seconds");
 
 function updateLearningStats() {
   const now = new Date();
@@ -20,13 +21,15 @@ function updateLearningStats() {
   const days = Math.floor(difference / 86400000);
   const hours = Math.floor(difference / 3600000) % 24;
   const minutes = Math.floor(difference / 60000) % 60;
+  const seconds = Math.floor(difference / 1000) % 60;
 
   dateElement.textContent = formattedDate;
   daysElement.textContent = days;
   hoursElement.textContent = String(hours).padStart(2, "0");
   minutesElement.textContent = String(minutes).padStart(2, "0");
+  secondsElement.textContent = String(seconds).padStart(2, "0");
 }
 
 updateLearningStats();
 
-const statsIntervalId = setInterval(updateLearningStats, 60000);
+const statsIntervalId = setInterval(updateLearningStats, 1000);
