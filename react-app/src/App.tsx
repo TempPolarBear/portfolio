@@ -7,6 +7,7 @@ import Navbar from './components/Navbar/Navbar.tsx'
 import Hero from './components/Hero/Hero.tsx'
 import KeywordsMarquee from './components/KeywordsMarquee/KeywordsMarquee.tsx'
 import Experience from './components/Experience/Experience.tsx'
+import LearningJourney from './components/LearningJourney/LearningJourney.tsx'
 import GeneralInfo from './components/GeneralInfo/GeneralInfo.tsx'
 import Projects from './components/Projects/Projects.tsx'
 import Certification from './components/Certification/Certification.tsx'
@@ -31,13 +32,14 @@ function App() {
       <Navbar />
       <Hero />
       <KeywordsMarquee />
-      <div className="container pb-5">
+      <main className="container pb-5">
         <div className="row justify-content-center align-items-start g-4">
           <div className="col-12 col-lg-3">
             <GeneralInfo />
           </div>
           <div className="col-12 col-lg-9">
             <Experience />
+            <LearningJourney />
             <Projects />
             <Certification />
             <Education />
@@ -45,7 +47,7 @@ function App() {
             <Utills />
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   )

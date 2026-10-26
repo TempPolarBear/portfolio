@@ -59,6 +59,11 @@ function Footer() {
                                     </a>
                                 </li>
                                 <li className="mb-2 zoomInOut">
+                                    <a href="#learning-journey" className="text-decoration-none text-white-50">
+                                        <i className="fa-solid fa-stopwatch me-1"></i>Learning Journey
+                                    </a>
+                                </li>
+                                <li className="mb-2 zoomInOut">
                                     <a href="#projects" className="text-decoration-none text-white-50">
                                         <i className="fa-solid fa-folder-open me-2"></i>Projects
                                     </a>

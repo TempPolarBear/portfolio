@@ -40,6 +40,7 @@ function Navbar() {
                             data-bs-toggle="dropdown" aria-expanded="false"><i className="fa-solid fa-info me-1"></i>Portfolio</a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
                             <li><a className="dropdown-item zoomInOut" href="#experience"><i className="fa-solid fa-code-fork me-1"></i>Experience</a></li>
+                            <li><a className="dropdown-item zoomInOut" href="#learning-journey"><i className="fa-solid fa-stopwatch me-1"></i>Learning Journey</a></li>
                             <li><a className="dropdown-item zoomInOut" href="#projects"><i className="fa-solid fa-folder-open me-1"></i>Projects</a></li>
                             <li><a className="dropdown-item zoomInOut" href="#certification"><i className="fa-solid fa-medal me-1"></i>Certification</a></li>
                             <li><a className="dropdown-item zoomInOut" href="#education"><i className="fa-solid fa-graduation-cap me-1"></i>Education</a></li>
