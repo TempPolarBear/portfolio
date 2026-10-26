@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 type City = {
   id: number
@@ -19,6 +19,7 @@ function Date_Time() {
   const [now, setNow] = useState(() => new Date())
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
+  const requestIdRef = useRef(0)
 
   useEffect(() => {
     const interval = setInterval(() => setNow(new Date()), 1000)
@@ -26,29 +27,38 @@ function Date_Time() {
   }, [])
 
   useEffect(() => {
-    if (query.trim().length < 3) return
+    const searchQuery = query.trim()
+    const requestId = ++requestIdRef.current
+
+    if (searchQuery.length < 3) return
 
     const controller = new AbortController()
+    const isCurrentRequest = () =>
+      requestId === requestIdRef.current && !controller.signal.aborted
+
     const timer = setTimeout(async () => {
+      if (!isCurrentRequest()) return
+
       setLoading(true)
-      setError("")
 
       try {
         const response = await fetch(
-          `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(query.trim())}&count=8&language=en&format=json`,
+          `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(searchQuery)}&count=8&language=en&format=json`,
           { signal: controller.signal }
         )
         if (!response.ok) throw new Error("Search failed")
 
         const data: CityResponse = await response.json()
-        if (controller.signal.aborted) return
+        if (!isCurrentRequest()) return
+
         setCities((data.results ?? []).filter(city => city.timezone))
       } catch {
-        if (controller.signal.aborted) return
+        if (!isCurrentRequest()) return
+
         setCities([])
         setError("Unable to search cities.")
       } finally {
-        if (!controller.signal.aborted) setLoading(false)
+        if (isCurrentRequest()) setLoading(false)
       }
     }, 400)
 
@@ -62,10 +72,20 @@ function Date_Time() {
     new Intl.DateTimeFormat("en-GB", { ...options, timeZone: selected.timezone }).format(now)
 
   const selectCity = (city: City) => {
+    requestIdRef.current += 1
     setSelected({ name: city.name, country: city.country ?? "", timezone: city.timezone })
     setQuery("")
     setCities([])
     setError("")
+    setLoading(false)
+  }
+
+  const handleQueryChange = (value: string) => {
+    requestIdRef.current += 1
+    setQuery(value)
+    setCities([])
+    setError("")
+    setLoading(false)
   }
 
   return (
@@ -77,11 +97,7 @@ function Date_Time() {
       <div className="card-body">
         {/* City search */}
         <label className="form-label" htmlFor="city-search">Search city</label>
-        <input id="city-search" className="form-control mb-2" type="search" placeholder="Enter city name..." value={query} onChange={event => {
-          setQuery(event.target.value)
-          setCities([])
-          setError("")
-        }} />
+        <input id="city-search" className="form-control mb-2" type="search" placeholder="Enter city name..." value={query} onChange={event => handleQueryChange(event.target.value)} />
 
         {loading && <p className="small text-body-secondary">Searching...</p>}
         {error && <p className="small text-danger">{error}</p>}

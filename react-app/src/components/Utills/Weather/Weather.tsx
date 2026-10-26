@@ -44,15 +44,24 @@ function Weather() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
   const requestRef = useRef<AbortController | null>(null)
+  const requestIdRef = useRef(0)
 
-  useEffect(() => () => requestRef.current?.abort(), [])
+  useEffect(() => () => {
+    requestIdRef.current += 1
+    requestRef.current?.abort()
+    requestRef.current = null
+  }, [])
 
   const searchWeather = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     const query = city.trim()
+    const requestId = ++requestIdRef.current
 
     requestRef.current?.abort()
+    requestRef.current = null
+
     if (!query) {
+      setLoading(false)
       setWeather(null)
       setError("Enter a city name.")
       return
@@ -60,6 +69,9 @@ function Weather() {
 
     const controller = new AbortController()
     requestRef.current = controller
+    const isCurrentRequest = () =>
+      requestId === requestIdRef.current && !controller.signal.aborted
+
     setLoading(true)
     setError("")
     setWeather(null)
@@ -73,6 +85,8 @@ function Weather() {
       if (!geoResponse.ok) throw new Error("Location request failed")
 
       const geoData: { results?: Location[] } = await geoResponse.json()
+      if (!isCurrentRequest()) return
+
       const location = geoData.results?.[0]
       if (!location) {
         setError("City not found.")
@@ -88,6 +102,8 @@ function Weather() {
       if (!response.ok) throw new Error("Weather request failed")
 
       const data: { current?: CurrentWeather } = await response.json()
+      if (!isCurrentRequest()) return
+
       if (!data.current) throw new Error("Weather data missing")
 
       setWeather({
@@ -95,11 +111,11 @@ function Weather() {
         current: data.current
       })
     } catch {
-      if (!controller.signal.aborted) setError("Unable to load weather.")
+      if (isCurrentRequest()) setError("Unable to load weather.")
     } finally {
-      if (!controller.signal.aborted) {
+      if (isCurrentRequest()) {
         setLoading(false)
-        requestRef.current = null
+        if (requestRef.current === controller) requestRef.current = null
       }
     }
   }
