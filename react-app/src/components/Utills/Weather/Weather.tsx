@@ -135,7 +135,7 @@ function Weather() {
         {/* City search */}
         <form onSubmit={searchWeather} noValidate>
           <label className="form-label fw-semibold" htmlFor="weather-city">City</label>
-          <div className="weather-controls mb-3">
+          <div className="weather-controls d-flex gap-2 mb-3">
             <input id="weather-city" className="form-control" type="search" placeholder="Enter a city..." value={city} onChange={event => setCity(event.target.value)} />
             <button className="btn btn-primary shadow-sm" type="submit" disabled={loading}>
               <i className="fa-solid fa-magnifying-glass me-1"></i>

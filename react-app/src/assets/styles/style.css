@@ -12,7 +12,6 @@ Technologies: HTML, CSS, Bootstrap
   border-bottom: 1px solid var(--bs-border-color);
 }
 
-.site-navbar .navbar-brand,
 .site-navbar .navbar-nav .nav-link,
 .site-navbar .navbar-nav .nav-link:focus,
 .site-navbar .navbar-nav .nav-link:hover {
@@ -53,12 +52,12 @@ Technologies: HTML, CSS, Bootstrap
 /* ===== BUTTONS — Theme-Aware Hover ===== */
 
 .zoomInOut {
-  transition: transform 180ms ease, box-shadow 180ms ease !important;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease !important;
 }
 
 @media (hover: hover) {
   .btn.zoomInOut:hover {
-    transform: scale(1.04);
+    transform: translateY(-1px) scale(1.02) !important;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22) !important;
   }
 
@@ -72,10 +71,29 @@ Technologies: HTML, CSS, Bootstrap
     transform: scale(1.02) !important;
   }
 
-  main .card.zoomInOut:hover,
+  main .card.zoomInOut:hover {
+    transform: translateY(-2px) !important;
+    border-color: rgba(var(--bs-primary-rgb), 0.35);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  }
+
   footer.zoomInOut:hover {
     transform: none !important;
   }
+}
+
+[data-bs-theme="dark"] main .card.zoomInOut:hover {
+  border-color: rgba(var(--bs-primary-rgb), 0.55);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* Hero photo: a subtle primary-colour glow without changing its layout. */
+#welcome .col.align-self-center img {
+  box-shadow: 0 0 0 0.6rem rgba(var(--bs-primary-rgb), 0.06), 0 16px 32px rgba(var(--bs-primary-rgb), 0.16);
+}
+
+[data-bs-theme="dark"] #welcome .col.align-self-center img {
+  box-shadow: 0 0 0 0.6rem rgba(var(--bs-primary-rgb), 0.14), 0 16px 36px rgba(0, 0, 0, 0.35);
 }
 
 .thumb {
@@ -106,23 +124,6 @@ Technologies: HTML, CSS, Bootstrap
   to { transform: translateX(-50%); }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .keyword-track {
-    width: auto;
-    animation: none;
-  }
-
-  .keyword-set {
-    min-width: 0;
-    flex-wrap: wrap;
-    white-space: normal !important;
-  }
-
-  .keyword-set[aria-hidden="true"] {
-    display: none !important;
-  }
-}
-
 #certification .thumb {
   width: auto;
   height: 220px;
@@ -135,17 +136,8 @@ Technologies: HTML, CSS, Bootstrap
   flex: 1 1 0;
 }
 
-#utils .weather-controls {
-  display: flex;
-  gap: 0.5rem;
-}
-
 #utils .weather-controls .form-control {
   min-width: 0;
-}
-
-.btn[aria-disabled="true"] {
-  opacity: 0.65;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -161,10 +153,10 @@ Technologies: HTML, CSS, Bootstrap
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 0.5rem 1rem;
-    white-space: normal;
+    white-space: normal !important;
   }
   .keyword-set[aria-hidden="true"] {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -183,11 +175,6 @@ Technologies: HTML, CSS, Bootstrap
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-}
-
-.swiper-slide img {
   max-width: 100%;
   height: auto;
 }
@@ -397,10 +384,22 @@ main .card {
 }
 
 main .card-header {
+  position: relative;
   background-color: var(--bs-tertiary-bg);
   color: var(--bs-body-color);
   padding: 0.85rem 1rem;
   border-bottom-color: var(--bs-border-color);
+}
+
+main .card-header::after,
+.keywords-section .card-header::after {
+  content: "";
+  display: block;
+  width: 2.25rem;
+  height: 2px;
+  margin-top: 0.45rem;
+  background-color: var(--bs-primary);
+  border-radius: 999px;
 }
 
 main .card-header :is(h2, h3) {
@@ -416,11 +415,6 @@ main :is(a, button, input, select, textarea):focus-visible,
 #welcome .btn:focus-visible {
   outline: 3px solid rgba(var(--bs-primary-rgb), 0.45);
   outline-offset: 2px;
-}
-
-#projects .h6,
-#utils .h5 {
-  letter-spacing: 0.01em;
 }
 
 #projects .thumb {
@@ -471,6 +465,27 @@ main :is(a, button, input, select, textarea):focus-visible,
   line-height: 1.2;
 }
 
+.skill-tag {
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+@media (hover: hover) {
+  .skill-tag:hover {
+    border-color: rgba(var(--bs-primary-rgb), 0.45);
+    background-color: rgba(var(--bs-primary-rgb), 0.08);
+    box-shadow: 0 2px 6px rgba(var(--bs-primary-rgb), 0.12);
+  }
+
+  #utils .btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.16);
+  }
+}
+
+[data-bs-theme="dark"] #utils .btn:hover:not(:disabled) {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
 .keyword-set span {
   box-shadow: 0 1px 3px rgba(var(--bs-primary-rgb), 0.06);
   gap: 0.4rem;
@@ -514,7 +529,6 @@ main :is(a, button, input, select, textarea):focus-visible,
   overflow-wrap: anywhere;
 }
 
-#utils .utility-details dl,
 #utils .utility-details {
   margin-bottom: 0;
 }
@@ -542,8 +556,6 @@ main :is(a, button, input, select, textarea):focus-visible,
 }
 
 #utils .prediction-box {
-  display: flex;
-  align-items: center;
   min-height: 145px;
   padding: 1.25rem;
   border: 1px solid var(--bs-border-color);
@@ -554,6 +566,16 @@ main :is(a, button, input, select, textarea):focus-visible,
 @media (prefers-reduced-motion: reduce) {
   .zoomInOut {
     transition: none !important;
+  }
+
+  .skill-tag,
+  #utils .btn {
+    transition: none;
+  }
+
+  main .card.zoomInOut:hover,
+  #utils .btn:hover:not(:disabled) {
+    transform: none !important;
   }
 }
 
@@ -682,18 +704,6 @@ main :is(a, button, input, select, textarea):focus-visible,
     min-width: 0 !important;
   }
 }
-
-
-
-.fortune-reveal {
-  animation: fortuneReveal 0.5s ease-out;
-}
-
-@keyframes fortuneReveal {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 /* Fortune Cookie animations */
 .fortune-cookie-container {
   width: 150px;
@@ -710,12 +720,12 @@ main :is(a, button, input, select, textarea):focus-visible,
   transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Светлая тема */
+/* Light theme */
 [data-bs-theme="light"] .fortune-cookie-img {
   filter: grayscale(1) brightness(0.92) contrast(1.05) opacity(0.9);
 }
 
-/* Тёмная тема */
+/* Dark theme */
 [data-bs-theme="dark"] .fortune-cookie-img {
   filter: grayscale(1) brightness(1.15) contrast(0.95) opacity(0.85);
 }
@@ -724,7 +734,7 @@ main :is(a, button, input, select, textarea):focus-visible,
   transform: scale(1.03);
 }
 
-/* Анимации */
+/* Animations */
 .fortune-float {
   animation: fortuneFloat 3s ease-in-out infinite;
 }
@@ -775,12 +785,6 @@ main :is(a, button, input, select, textarea):focus-visible,
 /* Randomizer animations */
 .random-result-area {
   min-height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 600;
 }
 
 .random-spin { animation: randomSpin 0.6s ease-in-out infinite; }
@@ -813,9 +817,6 @@ main :is(a, button, input, select, textarea):focus-visible,
 }
 
 .currency-swap {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   min-height: 38px;
   padding: 0.375rem 0.25rem;

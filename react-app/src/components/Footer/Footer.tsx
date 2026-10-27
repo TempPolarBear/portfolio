@@ -11,7 +11,7 @@ function Footer() {
                             <a className="text-decoration-none text-primary" href="#">&lt;Valeriia /&gt;</a>
                         </h4>
                     </div>
-                    <p className="text-secondary small mt-3 mb-0">Junior Frontend Developer • Interested in UI/UX</p>
+                    <p className="text-secondary small mt-3 mb-0">Junior Front-End/Full-Stack Developer • Interested in UI/UX</p>
                     <p className="small text-secondary mt-2">Open to opportunities • Remote / relocation</p>
                 </div>
                 <div className="row justify-content-center g-5 mb-4 text-center text-lg-start">

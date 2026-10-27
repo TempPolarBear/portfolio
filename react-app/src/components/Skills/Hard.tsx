@@ -8,7 +8,7 @@ function Hard() {
                 <div className="card-body">
                     <div className="row row-cols-1 row-cols-md-2 g-4">
                         <div className="col skill-group">
-                            <h6 className="text-primary fw-bold mb-2"><i className="fa-solid fa-code me-1"></i>Core Frontend</h6>
+                            <h6 className="text-primary fw-bold mb-2"><i className="fa-solid fa-code me-1"></i>Core Front-End</h6>
                             <ul className="skill-tags">
                                 <li><span className="skill-tag">HTML</span></li>
                                 <li><span className="skill-tag">CSS</span></li>

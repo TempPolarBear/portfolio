@@ -47,7 +47,7 @@ function Prediction() {
         </div>
 
         {/* Fortune message */}
-        <div className="prediction-box my-3">
+        <div className="prediction-box d-flex align-items-center my-3">
           <p key={loading ? "loading" : prediction} className={`utility-result mb-0 ${error ? "text-danger" : ""} ${revealed ? "fortune-reveal" : ""}`} role="status" aria-live="polite">
             {loading ? "Revealing your fortune..." : prediction}
           </p>

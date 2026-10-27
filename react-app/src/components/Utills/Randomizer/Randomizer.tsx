@@ -102,7 +102,7 @@ function Randomizer() {
         )}
 
         {/* Animated result */}
-        <div className="random-result-area mb-3" role="status" aria-live="polite">
+        <div className="random-result-area d-flex align-items-center justify-content-center text-center fs-5 fw-semibold mb-3" role="status" aria-live="polite">
           {spinning ? (
             mode === "number" ? (
               <i className="fa-solid fa-dice random-spin text-primary fa-2x" aria-label="Generating number" />

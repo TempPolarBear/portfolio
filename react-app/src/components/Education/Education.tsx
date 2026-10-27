@@ -6,12 +6,12 @@ function Education() {
                     <h5 className="m-0 p-0 fw-bold"><i className="fa-solid fa-graduation-cap me-1"></i>Education</h5>
                 </div>
                 <div className="card-body">
-                    <p><i className="fa-solid fa-building-columns me-1"></i>GoIT: Frontend Developer Course</p>
-                    <p><i className="fa-solid fa-graduation-cap me-1"></i>Program: Frontend Developer</p>
+                    <p><i className="fa-solid fa-building-columns me-1"></i>GoIT: Front-End/Full-Stack Developer Course</p>
+                    <p><i className="fa-solid fa-graduation-cap me-1"></i>Program: Front-End/Full-Stack Developer</p>
                     <p><i className="fa-solid fa-location-dot me-1"></i>Format: Online</p>
                     <p><i className="fa-solid fa-calendar-days me-1"></i>Study Period: Feb 2026 - Present</p>
                     <p><i className="fa-solid fa-book-open me-1"></i>Status: Ongoing</p>
-                    <p className="mb-0"><i className="fa-solid fa-circle-info me-1"></i>Description: Practical frontend development training focused on modern web development, responsive interfaces and project-based learning.</p>
+                    <p className="mb-0"><i className="fa-solid fa-circle-info me-1"></i>Description: Practical Front-End development training focused on modern web development, responsive interfaces and project-based learning.</p>
                 </div>
                 <div className="card-body">
                         <p><i className="fa-solid fa-building-columns me-1"></i>University: Odesa National University of Technology</p>

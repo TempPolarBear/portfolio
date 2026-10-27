@@ -27,7 +27,7 @@ const rows = [
 
 function KeywordsMarquee() {
   return (
-    <section data-aos="fade-up" data-aos-duration="1500" className="container mb-4" aria-labelledby="keywords-heading">
+    <section data-aos="fade-up" data-aos-duration="1500" className="container mb-4 keywords-section" aria-labelledby="keywords-heading">
       <div className="card">
         <div className="card-header">
           <h5 id="keywords-heading" className="m-0">

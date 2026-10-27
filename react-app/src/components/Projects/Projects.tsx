@@ -14,13 +14,13 @@ function Projects() {
               <div className="swiper-slide">
                 <article className="text-center px-2">
                   <h4 className="text-center p-0 m-2">Movie Search with React Query</h4>
-                  <p><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
+                  <p className="d-flex justify-content-center align-items-center flex-wrap gap-2"><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                   <a className="m-2" href="/assets/img/projects/movie-search-with-react-query.webp" data-lightbox="roadtrip" data-title="Movie Search with React Query">
                     <img className="img-fluid thumb rounded mb-2" width="150" height="150" src="/assets/img/projects/movie-search-with-react-query.webp" alt="Movie Search with React Query" loading="lazy" />
                   </a>
                   <p className="mb-2"><strong>Summary:</strong> Search movies with cached queries and pagination.</p>
                   <p className="mb-2"><i className="fa-solid fa-code me-1"></i><strong>Technologies:</strong></p>
-                  <ul className="skill-tags project-tags"><li><span className="skill-tag">React</span></li><li><span className="skill-tag">TypeScript</span></li><li><span className="skill-tag">TanStack Query</span></li><li><span className="skill-tag">Axios</span></li><li><span className="skill-tag">React Paginate</span></li><li><span className="skill-tag">Vite</span></li></ul>
+                  <ul className="skill-tags project-tags justify-content-center align-items-center"><li><span className="skill-tag">React</span></li><li><span className="skill-tag">TypeScript</span></li><li><span className="skill-tag">TanStack Query</span></li><li><span className="skill-tag">Axios</span></li><li><span className="skill-tag">React Paginate</span></li><li><span className="skill-tag">Vite</span></li></ul>
                   <p className="mb-1"><strong>Key features:</strong></p>
                   <ul className="list-unstyled small mb-3 d-inline-block text-start">
                     <li>Search with controlled pagination</li>
@@ -37,13 +37,13 @@ function Projects() {
               <div className="swiper-slide">
                 <article className="text-center px-2">
                   <h4 className="text-center p-0 m-2">Movie Search</h4>
-                  <p><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
+                  <p className="d-flex justify-content-center align-items-center flex-wrap gap-2"><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                   <a className="m-2" href="/assets/img/projects/movie-search.webp" data-lightbox="roadtrip" data-title="Movie Search">
                     <img className="img-fluid thumb rounded mb-2" width="150" height="150" src="/assets/img/projects/movie-search.webp" alt="Movie Search" loading="lazy" />
                   </a>
                   <p className="mb-2"><strong>Summary:</strong> Search for movies using the TMDB API.</p>
                   <p className="mb-2"><i className="fa-solid fa-code me-1"></i><strong>Technologies:</strong></p>
-                  <ul className="skill-tags project-tags"><li><span className="skill-tag">React</span></li><li><span className="skill-tag">TypeScript</span></li><li><span className="skill-tag">Axios</span></li><li><span className="skill-tag">TMDB API</span></li><li><span className="skill-tag">Vite</span></li></ul>
+                  <ul className="skill-tags project-tags justify-content-center align-items-center"><li><span className="skill-tag">React</span></li><li><span className="skill-tag">TypeScript</span></li><li><span className="skill-tag">Axios</span></li><li><span className="skill-tag">TMDB API</span></li><li><span className="skill-tag">Vite</span></li></ul>
                   <p className="mb-1"><strong>Key features:</strong></p>
                   <ul className="list-unstyled small mb-3 d-inline-block text-start">
                     <li>Movie search through the TMDB API</li>
@@ -60,13 +60,13 @@ function Projects() {
               <div className="swiper-slide">
                 <article className="text-center px-2">
                   <h4 className="text-center p-0 m-2">Café Feedback</h4>
-                  <p><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
+                  <p className="d-flex justify-content-center align-items-center flex-wrap gap-2"><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                   <a className="m-2" href="/assets/img/projects/cafe-feedback.webp" data-lightbox="roadtrip" data-title="Café Feedback">
                     <img className="img-fluid thumb rounded mb-2" width="150" height="150" src="/assets/img/projects/cafe-feedback.webp" alt="Café Feedback" loading="lazy" />
                   </a>
                   <p className="mb-2"><strong>Summary:</strong> Record café feedback and view vote totals.</p>
                   <p className="mb-2"><i className="fa-solid fa-code me-1"></i><strong>Technologies:</strong></p>
-                  <ul className="skill-tags project-tags"><li><span className="skill-tag">React</span></li><li><span className="skill-tag">TypeScript</span></li><li><span className="skill-tag">Vite</span></li><li><span className="skill-tag">CSS Modules</span></li></ul>
+                  <ul className="skill-tags project-tags justify-content-center align-items-center"><li><span className="skill-tag">React</span></li><li><span className="skill-tag">TypeScript</span></li><li><span className="skill-tag">Vite</span></li><li><span className="skill-tag">CSS Modules</span></li></ul>
                   <p className="mb-1"><strong>Key features:</strong></p>
                   <ul className="list-unstyled small mb-3 d-inline-block text-start">
                     <li>Good, neutral, and bad vote state</li>
@@ -83,8 +83,8 @@ function Projects() {
               <div className="swiper-slide">
                 <article className="text-center px-2">
                   <h4 className="text-center p-0 m-2">The Sweet Workshop</h4>
-                  <p>
-                    <span className="badge rounded-pill border border-primary text-primary fw-normal me-1">Team Project</span>
+                  <p className="d-flex justify-content-center align-items-center flex-wrap gap-2">
+                    <span className="badge rounded-pill border border-primary text-primary fw-normal">Team Project</span>
                     <span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span>
                   </p>
                   <a className="m-2" href="/assets/img/projects/the-sweet-workshop.webp" data-lightbox="roadtrip" data-title="The Sweet Workshop">
@@ -92,7 +92,7 @@ function Projects() {
                   </a>
                   <p className="mb-2"><strong>Summary:</strong> A team-built dessert shop with product browsing, ordering, API integration and a responsive interface.</p>
                   <p className="mb-2"><i className="fa-solid fa-code me-1"></i><strong>Technologies:</strong></p>
-                  <ul className="skill-tags project-tags"><li><span className="skill-tag">HTML</span></li><li><span className="skill-tag">CSS</span></li><li><span className="skill-tag">JavaScript</span></li><li><span className="skill-tag">Vite</span></li><li><span className="skill-tag">Axios</span></li><li><span className="skill-tag">Toastify</span></li></ul>
+                  <ul className="skill-tags project-tags justify-content-center align-items-center"><li><span className="skill-tag">HTML</span></li><li><span className="skill-tag">CSS</span></li><li><span className="skill-tag">JavaScript</span></li><li><span className="skill-tag">Vite</span></li><li><span className="skill-tag">Axios</span></li><li><span className="skill-tag">Toastify</span></li></ul>
                   <p className="mb-2"><strong>My contribution:</strong> Built the responsive Order Modal with form validation, API submission, loading states, toast feedback and multiple closing interactions.</p>
                   <p className="mb-1"><strong>Key features:</strong></p>
                   <ul className="list-unstyled small mb-3 d-inline-block text-start">
@@ -129,7 +129,7 @@ function Projects() {
               <p className="text-body small mb-3">The project is actively evolving and will continue to be improved and expanded.</p>
               <p className="mb-2"><strong>Summary:</strong> A personal fantasy RPG character creator with saved characters.</p>
               <p className="mb-2"><i className="fa-solid fa-code me-1"></i><strong>Technologies:</strong></p>
-              <ul className="skill-tags project-tags"><li><span className="skill-tag">JavaScript</span></li><li><span className="skill-tag">Vite</span></li><li><span className="skill-tag">HTML</span></li><li><span className="skill-tag">CSS</span></li><li><span className="skill-tag">Bootstrap</span></li></ul>
+              <ul className="skill-tags project-tags justify-content-center align-items-center"><li><span className="skill-tag">JavaScript</span></li><li><span className="skill-tag">Vite</span></li><li><span className="skill-tag">HTML</span></li><li><span className="skill-tag">CSS</span></li><li><span className="skill-tag">Bootstrap</span></li></ul>
               <p className="mb-1"><strong>Key features:</strong></p>
               <ul className="list-unstyled small mb-3 d-inline-block text-start">
                 <li>Step-by-step character creation</li>
@@ -150,13 +150,13 @@ function Projects() {
                 <div className="swiper-slide">
                   <div className="text-center">
                     <h4 className="p-0 m-2">NFT for Music</h4>
-                    <p><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
+                    <p className="d-flex justify-content-center align-items-center flex-wrap gap-2"><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                     <a className="m-2" href="/assets/img/projects/nft-platform.webp" data-lightbox="roadtrip" data-title="NFT for Music">
                       <img className="img-fluid thumb rounded mb-2" width="150" height="150" src="/assets/img/projects/nft-platform.webp" alt="NFT for Music" loading="lazy" />
                     </a>
                     <p className="mb-2"><strong>Summary:</strong> A layout for a music NFT platform concept.</p>
                     <p className="mb-2"><i className="fa-solid fa-code me-1"></i><strong>Technologies:</strong></p>
-                    <ul className="skill-tags project-tags"><li><span className="skill-tag">HTML</span></li><li><span className="skill-tag">CSS</span></li><li><span className="skill-tag">Bootstrap</span></li></ul>
+                    <ul className="skill-tags project-tags justify-content-center align-items-center"><li><span className="skill-tag">HTML</span></li><li><span className="skill-tag">CSS</span></li><li><span className="skill-tag">Bootstrap</span></li></ul>
                     <p className="mb-1"><strong>Key features:</strong></p>
                     <ul className="list-unstyled small mb-3 d-inline-block text-start">
                       <li>Music NFT platform concept</li>
@@ -172,13 +172,13 @@ function Projects() {
                 <div className="swiper-slide">
                   <div className="text-center">
                     <h4 className="p-0 m-2">Appello</h4>
-                    <p><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
+                    <p className="d-flex justify-content-center align-items-center flex-wrap gap-2"><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                     <a className="m-2" href="/assets/img/projects/appello-website.webp" data-lightbox="roadtrip" data-title="Appello">
                       <img className="img-fluid thumb rounded mb-2" width="150" height="150" src="/assets/img/projects/appello-website.webp" alt="Appello" loading="lazy" />
                     </a>
                     <p className="mb-2"><strong>Summary:</strong> A company website layout with services, portfolio and team sections.</p>
                     <p className="mb-2"><i className="fa-solid fa-code me-1"></i><strong>Technologies:</strong></p>
-                    <ul className="skill-tags project-tags"><li><span className="skill-tag">HTML</span></li><li><span className="skill-tag">CSS</span></li><li><span className="skill-tag">Bootstrap</span></li></ul>
+                    <ul className="skill-tags project-tags justify-content-center align-items-center"><li><span className="skill-tag">HTML</span></li><li><span className="skill-tag">CSS</span></li><li><span className="skill-tag">Bootstrap</span></li></ul>
                     <p className="mb-1"><strong>Key features:</strong></p>
                     <ul className="list-unstyled small mb-3 d-inline-block text-start">
                       <li>Company services website</li>
@@ -194,13 +194,13 @@ function Projects() {
                 <div className="swiper-slide">
                   <div className="text-center">
                     <h4 className="p-0 m-2">Barbershop</h4>
-                    <p><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
+                    <p className="d-flex justify-content-center align-items-center flex-wrap gap-2"><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                     <a className="m-2" href="/assets/img/projects/barbershop.webp" data-lightbox="roadtrip" data-title="Barbershop">
                       <img className="img-fluid thumb rounded mb-2" width="150" height="150" src="/assets/img/projects/barbershop.webp" alt="Barbershop" loading="lazy" />
                     </a>
                     <p className="mb-2"><strong>Summary:</strong> A barbershop layout with services, prices and a gallery.</p>
                     <p className="mb-2"><i className="fa-solid fa-code me-1"></i><strong>Technologies:</strong></p>
-                    <ul className="skill-tags project-tags"><li><span className="skill-tag">HTML</span></li><li><span className="skill-tag">CSS</span></li><li><span className="skill-tag">Bootstrap</span></li></ul>
+                    <ul className="skill-tags project-tags justify-content-center align-items-center"><li><span className="skill-tag">HTML</span></li><li><span className="skill-tag">CSS</span></li><li><span className="skill-tag">Bootstrap</span></li></ul>
                     <p className="mb-1"><strong>Key features:</strong></p>
                     <ul className="list-unstyled small mb-3 d-inline-block text-start">
                       <li>Services and pricing sections</li>
@@ -216,13 +216,13 @@ function Projects() {
                 <div className="swiper-slide">
                   <div className="text-center">
                     <h4 className="p-0 m-2">Covid</h4>
-                    <p><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
+                    <p className="d-flex justify-content-center align-items-center flex-wrap gap-2"><span className="badge rounded-pill border border-primary text-primary fw-normal">Learning Project</span></p>
                     <a className="m-2" href="/assets/img/projects/covid-dashboard.webp" data-lightbox="roadtrip" data-title="Covid">
                       <img className="img-fluid thumb rounded mb-2" width="150" height="150" src="/assets/img/projects/covid-dashboard.webp" alt="Covid" loading="lazy" />
                     </a>
                     <p className="mb-2"><strong>Summary:</strong> An informational COVID-19 resource layout.</p>
                     <p className="mb-2"><i className="fa-solid fa-code me-1"></i><strong>Technologies:</strong></p>
-                    <ul className="skill-tags project-tags"><li><span className="skill-tag">HTML</span></li><li><span className="skill-tag">CSS</span></li></ul>
+                    <ul className="skill-tags project-tags justify-content-center align-items-center"><li><span className="skill-tag">HTML</span></li><li><span className="skill-tag">CSS</span></li></ul>
                     <p className="mb-1"><strong>Key features:</strong></p>
                     <ul className="list-unstyled small mb-3 d-inline-block text-start">
                       <li>COVID-19 information concept</li>

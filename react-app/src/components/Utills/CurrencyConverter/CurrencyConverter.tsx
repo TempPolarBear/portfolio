@@ -161,7 +161,7 @@ function CurrencyConverter() {
           </div>
 
           <div className="col-2 text-center">
-            <button className="btn btn-outline-primary currency-swap" type="button" onClick={swapCurrencies} aria-label="Swap currencies">
+            <button className="btn btn-outline-primary currency-swap d-inline-flex align-items-center justify-content-center" type="button" onClick={swapCurrencies} aria-label="Swap currencies">
               <i className={`fa-solid fa-right-left ${swapped ? "currency-swap-rotated" : ""}`}></i>
             </button>
           </div>
